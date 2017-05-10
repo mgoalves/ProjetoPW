@@ -29,113 +29,119 @@
             margin-top: 15px; 
         }
 
-        .botoes{
+        .botoes {
             margin-left: -15px;
-
         }
 
         .botoes button{
+            text-transform: uppercase;
+            font-size: 1.0em;
+            font-weight: 600;
             margin-bottom: 15px;
             margin-right: 15px;
         }
+        .botao-buscar-mobile{
+         /* margin-left: 15px;*/
+         width: auto;
 
-        .pesquisar input{
-            margin-bottom: 15px;
-        }
-
-        .pesquisaBotoes{
-            margin: 0px;
-        }
-
-        .titulo {
-            background-color: #0275D8;
-
-        }
-
-        .menu-lateral {
-
-            background-color: #fff;
-        }
-
-        .menu-lateral p{
-
-            text-align: center;
-            font-weight: 600;
-        }
-
-        /* Ajustes para o menu lateral em dispositivos mobile*/
-        .menu-lateral-mobile li a:hover{
-            background: rgba(2, 117, 216, 0.3)
-        }
-        /**********************************/
-
-        .conteudo {
-
-            background-color: #f3f3f3;
-
-        }
-
-        .destaque{
-            background-color: rgb(255, 0, 0);
-
-        }
-
-        /* Imagens do menu com 155px*/
-        .figure_115 {
-            border-radius: 5px;
-            box-shadow: 0px 0px 5px #006699; /*rgba(0,0,0,.4);*/
-            height: 115px;
-            width: 115px;
-            margin: auto;
-            margin-bottom: 10px;
-            margin-top: 5px;
-        }
-        
-        
-        .figure_115 img {
-
-            width: 100%;
-            height: 100%;
-
-        }
-
-        .figure_115 figcaption {
-         text-transform: uppercase;
-         text-align: center;
-         font-weight: bolder;
      }
-     /**********************************/
 
-     /* Imagens do menu com 32px*/
-     .figure_32 div{
-        height: 32px;
-        width: 100px;
-        margin: auto;
-        margin-bottom: 5px;
-        margin-top: 5px;
-        padding: 10px 5px;
-        border: 1px solid #ddd;
+     .pesquisar input{
+        margin-bottom: 15px;
+    }
+
+    .pesquisar button{
+        text-transform: uppercase;
+        font-size: 1.0em;
+
+    }
+    .pesquisaBotoes {
+
+    }
+
+    .titulo {
+        background-color: #0275D8;
+    }
+
+    .menu-lateral {
+
+    }
+
+    .menu-lateral p{
+        text-align: center;
+        font-weight: 600;
+    }
+
+    /* Ajustes para o menu lateral em dispositivos mobile*/
+    .menu-lateral-mobile li a:hover{
+        background: rgba(2, 117, 216, 0.3);
+    }
+    /**********************************/
+
+    .conteudo {
+        background-color: #f3f3f3;
+    }
+
+    .destaque1 {
+        background-color: rgb(255, 0, 0);
+        padding: 10px;
+    }
+    .destaque2 {
+        background-color: rgb(0, 255, 0);
+    }
+    .destaque3 {
+        background-color: rgb(0, 0, 255);
+    }
+
+    /* Imagens do menu com 155px*/
+    .figure_115 {
         border-radius: 5px;
+        box-shadow: 0px 0px 5px #006699; /*rgba(0,0,0,.4);*/
+        height: 115px;
+        width: 115px;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 5px;
     }
 
-    .figure_32 img{
-        height: 32px;
-        width: 32px;
-        vertical-align: -4px;
+
+    .figure_115 img{
+        width: 100%;
+        height: 100%;
     }
 
-    .figure_32 span{
-     text-transform: uppercase;
-     font-size:  14pt;
-     font-weight: bolder;
-     margin-left: 5px;
- }
+    .figure_115 figcaption{
+       text-transform: uppercase;
+       text-align: center;
+       font-weight: bolder;
+   }
+   /**********************************/
 
- /************************************/
+   /* Imagens do menu com 32px*/
+   .figure_32 div{
+    height: 32px;
+    width: 100px;
+    margin: auto;
+    margin: 5px 0px;
 
- .sombra {
+}
+
+.figure_32 img{
+    height: 32px;
+    width: 32px;
+    vertical-align: -4px;
+}
+
+.figure_32 span{
+   text-transform: uppercase;
+   font-size:  14pt;
+   font-weight: bolder;
+   margin-left: 5px;
+}
+/************************************/
+
+.sombra {
     box-shadow: 0px 0px 8px #333;
-
 }
 
 h1 {
@@ -144,6 +150,7 @@ h1 {
     font-weight: 600;
 }
 
+/* Rodapé */
 .rodape {
     background-color: #0275D8;
     margin-top: 15px;
@@ -152,9 +159,8 @@ h1 {
     font-size: 12pt;
     color: #fff;
     font-weight: 500;
-
 }
-
+/********************/
 </style>
 
 </head>
@@ -165,20 +171,22 @@ h1 {
 
         <div class="container-fluid">
 
-            <!-- Cabeçalho -->
+            <!--############# Linha Cabeçalho #############-->
             <div class="row titulo">
-                <div class="col-sm-12">
+                <div >
                     <h1>Gestão de Alunos</h1>
                 </div>
             </div>
+            <!-- ############# FIM do Cabeçalho #############-->
 
-            <!-- Linha principal -->
+            <!-- ############# Linha principal ############# -->
             <div class="row margem-top-15px">
 
+                <!-- Menu Lateral -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 menu-lateral">
 
-                 <!-- Static navbar -->
-                 <nav class="navbar navbar-default">
+                   <!-- Static navbar -->
+                   <nav class="navbar navbar-default">
                     <div class="container-fluid">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -186,6 +194,7 @@ h1 {
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
+                            <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#">MENU</a>
                         </div>
 
                         <div id="navbar" class="navbar-collapse collapse">
@@ -199,7 +208,6 @@ h1 {
                                             <img src="imagens/icones_menu_32/home_32px.png" alt="Menu Botão Home">
                                             <span>home</span>
                                         </div>
-
                                         <!-- Esse menu so parece para tablet, notebook e desktop -->
                                         <figure class="figure_115 hidden-xs">
                                             <img src="imagens/icones_menu/home.jpg" alt="Menu Botão Home">
@@ -216,7 +224,6 @@ h1 {
                                             <img src="imagens/icones_menu_32/aluno_32px.png" alt="Menu Botão Alunos">
                                             <span>alunos</span>
                                         </div>
-
                                         <!-- Esse menu so parece para tablet, notebook e desktop -->
                                         <figure class="figure_115 hidden-xs">
                                             <img src="imagens/icones_menu/aluno.jpg" alt="Menu Botão Alunos">
@@ -233,13 +240,11 @@ h1 {
                                             <img src="imagens/icones_menu_32/professor_32px.png" alt="Menu Botão Professores">
                                             <span>professores</span>
                                         </div>
-
                                         <!-- Esse menu so parece para tablet, notebook e desktop -->
                                         <figure class="figure_115 hidden-xs">
                                             <img src="imagens/icones_menu/professor.jpg" alt="Menu Botão Professores">
                                             <figcaption>professores</figcaption>
                                         </figure>
-
                                     </a>
                                 </li><!-- PROFESSORES -->
 
@@ -251,26 +256,19 @@ h1 {
                                             <img src="imagens/icones_menu_32/disciplina_32px.png" alt="Menu Botão Disciplina">
                                             <span>disciplina</span>
                                         </div>
-
                                         <!-- Esse menu so parece para tablet, notebook e desktop -->
                                         <figure class="figure_115 hidden-xs">
                                             <img src="imagens/icones_menu/disciplina.jpg" alt="Menu Botão Disciplina">
                                             <figcaption>disciplina</figcaption>
                                         </figure>
-
                                     </a>
                                 </li><!-- DISCIPLINA -->
 
-
                             </ul>
-
                         </div><!-- nav-collapse -->
-
                     </div><!-- container-fluid -->
-
                 </nav><!-- navbar-default -->
-
-            </div><!-- coluna menu-lateral -->
+            </div><!-- Menu Lateral -->
 
             <!-- Pesquisar e Botões de opções -->
             <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12 pesquisaBotoes">
@@ -279,44 +277,46 @@ h1 {
                 <div class="row pesquisar">
                     <form >
                         <div class="form-group">
-                            <div class="col-lg-11 col-md-10 col-sm-9 col-xs-9">
+                            <div class="col-lg-10 col-md-9 col-sm-8 col-xs-10">
                                 <input type="text" class="form-control" id="pesquisar" placeholder="Nome ou Matrícula">
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Pesquisar</button>
+                        <button type="submit" class="col-lg-1 col-md-2 col-sm-3 col-xs-1 hidden-xs btn btn-primary">Pesquisar</button>
+                        <button type="submit" class="col-xs-1 hidden-lg hidden-md hidden-sm btn btn-primary botao-buscar-mobile"><span class="glyphicon glyphicon-search"></span></button>
                     </form>
-
                 </div><!-- Pesquisar -->
 
                 <!-- Botões de opções -->
                 <div class="row botoes">
                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
-                      <button class="col-lg-2 col-md-3 col-sm-4 col-xs-12 btn btn-default btn-lg btn" type="submit">Cadastrar</button>
-                      <button class="col-lg-2 col-md-3 col-sm-4 col-xs-12 btn btn-default btn-lg btn" type="submit">Editar</button>
-                      <button class="col-lg-2 col-md-3 col-sm-4 col-xs-12 btn btn-default btn-lg btn" type="submit">Excluir</button>
-                      <button class="col-lg-2 col-md-3 col-sm-4 col-xs-12 btn btn-default btn-lg btn" type="submit">Histórico</button>
-
+                      <button class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary" type="submit">Cadastrar</button>
+                      <button class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary" type="submit">Editar</button>
+                      <button class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary" type="submit">Excluir</button>
+                      <button class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary" type="submit">Histórico</button>
                   </div>
               </div><!-- Botões de opções -->
 
+          </div><!-- Pesquisar e Botões de opções -->
 
-          </div><!-- Botões de opções -->
+          <!-- ############# Conteudo ############# -->
+          <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
 
-          <!-- Conteudo -->
-          <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12 conteudo">
-            <h3>O que é um software gestão escolar?</h3>
-            <p>
-                O conceito de gestão escolar nos remete ao gerenciamento e administração de uma determinada instituição de maneira eficiente. O objetivo da gestão escolar, portanto, é organizar todas as áreas, aspectos e determinantes para que o processo fim (a educação) ocorra de maneira eficaz, garantindo seu objetivo principal, que é a aprendizagem efetiva por parte dos alunos.
-            </p>
-        </div>
+          </div><!-- conteudo -->
+          <!-- ############# FIM do conteudo ############# -->
 
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 rodape">
           <footer>
-             <p>Sistema de Gestão de Alunos</p>
-         </footer>
-     </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 rodape">
 
- </div><!-- div container -->
+               <p>Sistema de Gestão de Alunos</p>
+
+           </div><!-- rodape -->
+       </footer>
+
+   </div><!-- Linha principal -->
+   <!-- ############# FIM da Linha principal ############# -->
+
+
+</div><!-- div container -->
 </div><!-- div wrapper -->
 
 
