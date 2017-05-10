@@ -24,59 +24,61 @@
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 
     <style type="text/css">
-        .titulo{
+        .titulo {
             background-color: #0275D8;
 
         }
 
-        .menu-lateral{
+        .menu-lateral {
 
             background-color: #fff;
-            box-shadow: 3px 3px 2px rgba(0, 0, 0, .2);
+            /*box-shadow: 3px 3px 2px rgba(0, 0, 0, .2);*/
         }
-        .conteudo{
+
+        .conteudo {
 
             background-color: #5CB85C;
         }
 
-        .figure{
+        .figure {
             border-radius: 5px;
-            box-shadow: 0px 0px 5px #006699;/*rgba(0,0,0,.4);*/
+            box-shadow: 0px 0px 5px #006699; /*rgba(0,0,0,.4);*/
             height: 115px;
             width: 115px;
             margin: auto;
             margin-bottom: 10px;
-            margin-top:5px; 
+            margin-top: 5px;
         }
 
-        .sombra{
+        .sombra {
             box-shadow: 0px 0px 8px #333;
 
         }
 
-        .figure img{
+        .figure img {
 
             width: 100%;
-            height: 80%;
-            
+            height: 100%;
+
         }
 
-        .figure figcaption{
+        .figure figcaption {
             text-align: center;
             font-weight: bolder;
         }
-        h1{
+
+        h1 {
             text-align: center;
             color: #fff;
             font-weight: 600;
-        }  
+        }
 
-        footer{
+        footer {
             background-color: #0275D8;
             padding-top: 10px;
         }
 
-        footer p{
+        footer p {
             text-align: center;
             font-size: 12pt;
             color: #fff;
@@ -92,9 +94,7 @@
 
     <div class="wrapper" role="main" style="margin-bottom: 15px">
 
-        <div class="container sombra" style="background-color: #fff">
-
-
+        <div class="container-fluid " style="background-color: #fff">
 
             <div class="row titulo">
                 <div class="col-sm-12">
@@ -103,95 +103,117 @@
             </div>
 
 
-            <div class="row" style="margin-top: 15px">
+            <div class="row menu-lateral" style="margin-top: 15px">
 
-               <div class="col-md-2 menu-lateral">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 menu-lateral">
 
-                   <div class="row">
-                    <figure class="figure">
-                        <img src="imagens/home.jpg" alt="botão home">
-                        <figcaption>HOME</figcaption>
-                    </figure>
-                </div>
+                   <!-- Static navbar -->
+                   <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
 
-                <div class="row">
-                    <figure class="figure">
-                        <img src="imagens/aluno.jpg" alt="botão home">
-                        <figcaption>ALUNOS</figcaption>
-                    </figure>
-                </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav">
 
-                <div class="row">
-                    <figure class="figure">
-                        <img src="imagens/professor.jpg" alt="botão home">
-                        <figcaption>PROFESSORES</figcaption>
-                    </figure>
-                </div>
+                                <li>
+                                    <a href="#">
+                                        <figure class="figure">
+                                            <img src="imagens/home.jpg" alt="botão home">
+                                            <figcaption>HOME</figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
 
-                <div class="row">
-                    <figure class="figure">
-                        <img src="imagens/disciplina.jpg" alt="botão home">
-                        <figcaption>DISCIPLINAS</figcaption>
-                    </figure>
-                </div>
+                                <li>
+                                    <a href="#">
+                                        <figure class="figure">
+                                            <img src="imagens/aluno.jpg" alt="botão home">
+                                            <figcaption>ALUNOS</figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
 
+                                <li>
+                                    <a href="#">
+                                        <figure class="figure">
+                                            <img src="imagens/professor.jpg" alt="botão home">
+                                            <figcaption>PROFESSOR</figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <figure class="figure">
+                                            <img src="imagens/disciplina.jpg" alt="botão home">
+                                            <figcaption>DISCIPLINA</figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div><!-- nav-collapse -->
+
+                    </div><!-- container-fluid -->
+
+                </nav><!-- navbar-default -->
+
+            </div><!-- coluna menu-lateral -->
+
+
+            <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12" style="background-color: #555">
+                <p>conteudo</p>
             </div>
 
-            
-            
- <div class="row">
-            <form >
-               
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="pesquisar" placeholder="Nome ou Matrícula">
-                        <button type="submit" class="col-sm-2 btn btn-default">Procurar</button>
-                    </div>
-                </div>
-            </form>
-            
-
-
-<!--
-            <div class="row" style="">
-                <div class="col-sm-offset-2 col-sm-6 form-group">
-                  <input class="btn btn-default" type="submit" value="Submit">
-                  <input class="btn btn-default" type="submit" value="Submit">
-                  <input class="btn btn-default" type="submit" value="Submit">
-                  <input class="btn btn-default" type="submit" value="Submit">
-                  <input class="btn btn-default" type="submit" value="Submit">
-                  <input class="btn btn-default" type="submit" value="Submit">
-              </div>
-          </div>
-
-      </div><!-- row menu -->
-<!--
-      <div class="row" style="background-color: #2aabd2; margin-top: 15px;">
-        <p>Azul</p>
-    </div>
-
-    <div class="row" style="background-color: #2b542c;  margin-top: 15px;">
-        <p>Verde</p>
-    </div>
--->
-
-
-<div class="row">
-    <div class="col-md-12">
-        <footer>
-            <div class="copyright">
-                <div class="container">
-
-                    <p>Sistema gestor de alunos</p>
-
-                </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color: #999">
+                <p>rodape</p>
             </div>
-        </footer>
-    </div>
-</div>
 
-</div><!-- div container -->
-</div><!-- div wrapper -->
+        </div><!-- div container -->
+    </div><!-- div wrapper -->
 
 
 </body>
 </html>
+
+<!-- Row -->
+
+            <!-- botão home  
+                                <li><a href="#">
+
+                                    <figure class="figure">
+                                        <img src="imagens/home.jpg" alt="botão home">
+                                        <figcaption>HOME</figcaption>
+                                    </figure>
+
+                                </a></li>
+                                
+    
+                    <div class="row" style="">
+                        <div class="col-sm-offset-2 col-sm-6 form-group">
+                          <input class="btn btn-default" type="submit" value="Submit">
+                          <input class="btn btn-default" type="submit" value="Submit">
+                          <input class="btn btn-default" type="submit" value="Submit">
+                          <input class="btn btn-default" type="submit" value="Submit">
+                          <input class="btn btn-default" type="submit" value="Submit">
+                          <input class="btn btn-default" type="submit" value="Submit">
+                      </div>
+                  </div>
+
+              </div> row menu -->
+        <!--
+              <div class="row" style="background-color: #2aabd2; margin-top: 15px;">
+                <p>Azul</p>
+            </div>
+
+            <div class="row" style="background-color: #2b542c;  margin-top: 15px;">
+                <p>Verde</p>
+            </div>
+        -->
