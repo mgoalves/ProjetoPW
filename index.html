@@ -57,17 +57,31 @@
             background-color: #fff;
         }
 
+        .menu-lateral p{
+
+            text-align: center;
+            font-weight: 600;
+        }
+
+        /* Ajustes para o menu lateral em dispositivos mobile*/
+        .menu-lateral-mobile li a:hover{
+            background: rgba(2, 117, 216, 0.3)
+        }
+        /**********************************/
+
         .conteudo {
 
-            background-color: #ff2;
+            background-color: #f3f3f3;
 
         }
 
         .destaque{
             background-color: rgb(255, 0, 0);
+
         }
 
-        .figure {
+        /* Imagens do menu com 155px*/
+        .figure_115 {
             border-radius: 5px;
             box-shadow: 0px 0px 5px #006699; /*rgba(0,0,0,.4);*/
             height: 115px;
@@ -76,41 +90,72 @@
             margin-bottom: 10px;
             margin-top: 5px;
         }
-
-        .sombra {
-            box-shadow: 0px 0px 8px #333;
-
-        }
-
-        .figure img {
+        
+        
+        .figure_115 img {
 
             width: 100%;
             height: 100%;
 
         }
 
-        .figure figcaption {
-            text-align: center;
-            font-weight: bolder;
-        }
+        .figure_115 figcaption {
+         text-transform: uppercase;
+         text-align: center;
+         font-weight: bolder;
+     }
+     /**********************************/
 
-        h1 {
-            text-align: center;
-            color: #fff;
-            font-weight: 600;
-        }
+     /* Imagens do menu com 32px*/
+     .figure_32 div{
+        height: 32px;
+        width: 100px;
+        margin: auto;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        padding: 10px 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
 
-        .rodape {
-            background-color: #0275D8;
-            padding: 5px;
-            text-align: center;
-            font-size: 12pt;
-            color: #fff;
-            font-weight: 500;
+    .figure_32 img{
+        height: 32px;
+        width: 32px;
+        vertical-align: -4px;
+    }
 
-        }
+    .figure_32 span{
+     text-transform: uppercase;
+     font-size:  14pt;
+     font-weight: bolder;
+     margin-left: 5px;
+ }
 
-    </style>
+ /************************************/
+
+ .sombra {
+    box-shadow: 0px 0px 8px #333;
+
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+.rodape {
+    background-color: #0275D8;
+    margin-top: 15px;
+    padding: 5px;
+    text-align: center;
+    font-size: 12pt;
+    color: #fff;
+    font-weight: 500;
+
+}
+
+</style>
 
 </head>
 
@@ -144,43 +189,78 @@
                         </div>
 
                         <div id="navbar" class="navbar-collapse collapse">
-                            <ul class="nav">
+                            <ul class="nav menu-lateral-mobile">
 
+                                <!-- HOME -->
                                 <li>
-                                    <a href="#">
-                                        <figure class="figure">
-                                            <img src="imagens/home.jpg" alt="botão home">
-                                            <figcaption>HOME</figcaption>
+                                    <a href="#home">
+                                        <!-- Esse menu so parece para celular -->
+                                        <div class="figure_32 hidden-lg hidden-md hidden-sm">
+                                            <img src="imagens/icones_menu_32/home_32px.png" alt="Menu Botão Home">
+                                            <span>home</span>
+                                        </div>
+
+                                        <!-- Esse menu so parece para tablet, notebook e desktop -->
+                                        <figure class="figure_115 hidden-xs">
+                                            <img src="imagens/icones_menu/home.jpg" alt="Menu Botão Home">
+                                            <figcaption>home</figcaption>
                                         </figure>
                                     </a>
-                                </li>
+                                </li><!-- HOME -->
 
+                                <!-- ALUNOS -->
                                 <li>
-                                    <a href="#">
-                                        <figure class="figure">
-                                            <img src="imagens/aluno.jpg" alt="botão home">
-                                            <figcaption>ALUNOS</figcaption>
+                                    <a href="#alunos">
+                                        <!-- Esse menu so parece para celular -->
+                                        <div class="figure_32 hidden-lg hidden-md hidden-sm">
+                                            <img src="imagens/icones_menu_32/aluno_32px.png" alt="Menu Botão Alunos">
+                                            <span>alunos</span>
+                                        </div>
+
+                                        <!-- Esse menu so parece para tablet, notebook e desktop -->
+                                        <figure class="figure_115 hidden-xs">
+                                            <img src="imagens/icones_menu/aluno.jpg" alt="Menu Botão Alunos">
+                                            <figcaption>alunos</figcaption>
                                         </figure>
                                     </a>
-                                </li>
+                                </li><!-- ALUNOS -->
 
+                                <!-- PROFESSORES -->
                                 <li>
-                                    <a href="#">
-                                        <figure class="figure">
-                                            <img src="imagens/professor.jpg" alt="botão home">
-                                            <figcaption>PROFESSOR</figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
+                                    <a href="#professores">
+                                        <!-- Esse menu so parece para celular -->
+                                        <div class="figure_32 hidden-lg hidden-md hidden-sm">
+                                            <img src="imagens/icones_menu_32/professor_32px.png" alt="Menu Botão Professores">
+                                            <span>professores</span>
+                                        </div>
 
-                                <li>
-                                    <a href="#">
-                                        <figure class="figure">
-                                            <img src="imagens/disciplina.jpg" alt="botão home">
-                                            <figcaption>DISCIPLINA</figcaption>
+                                        <!-- Esse menu so parece para tablet, notebook e desktop -->
+                                        <figure class="figure_115 hidden-xs">
+                                            <img src="imagens/icones_menu/professor.jpg" alt="Menu Botão Professores">
+                                            <figcaption>professores</figcaption>
                                         </figure>
+
                                     </a>
-                                </li>
+                                </li><!-- PROFESSORES -->
+
+                                <!-- DISCIPLINA -->
+                                <li>
+                                    <a href="#disciplina">
+                                        <!-- Esse menu so parece para celular -->
+                                        <div class="figure_32 hidden-lg hidden-md hidden-sm">
+                                            <img src="imagens/icones_menu_32/disciplina_32px.png" alt="Menu Botão Disciplina">
+                                            <span>disciplina</span>
+                                        </div>
+
+                                        <!-- Esse menu so parece para tablet, notebook e desktop -->
+                                        <figure class="figure_115 hidden-xs">
+                                            <img src="imagens/icones_menu/disciplina.jpg" alt="Menu Botão Disciplina">
+                                            <figcaption>disciplina</figcaption>
+                                        </figure>
+
+                                    </a>
+                                </li><!-- DISCIPLINA -->
+
 
                             </ul>
 
