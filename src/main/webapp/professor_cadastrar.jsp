@@ -1,4 +1,5 @@
-<%@ page contentType="text/html; charset=UTF-8"%><!DOCTYPE html>
+<%@ page contentType="text/html; charset=UTF-8"%>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="utf-8">
@@ -46,6 +47,7 @@
 					<%@include file="menuLateral.jsp"%>
 				</div>
 				<!--############# MENU LATERAL #############-->
+
 
 				<!--############# FAIXA DE OPÇÕES #############-->
                 <%@ include file="includes/professor/professor_faixa_opcoes.jsp"%>
