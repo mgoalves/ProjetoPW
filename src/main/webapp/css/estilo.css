@@ -1,3 +1,15 @@
+/***** TITULO ***********/
+.titulo {
+    background-color: #0275D8;
+}
+
+.titulo h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+/***********************************/
+
 .margem-top-15px{
     margin-top: 15px; 
 }
@@ -34,9 +46,7 @@
 background-color: #fff;
 }
 
-.titulo {
-    background-color: #0275D8;
-}
+
 
 /* menu lateral */
 .menu-lateral {
@@ -123,11 +133,7 @@ background-color: #fff;
     box-shadow: 0px 0px 8px #333;
 }
 
-h1 {
-    text-align: center;
-    color: #fff;
-    font-weight: 600;
-}
+
 
 /* Rodapé */
 .rodape {
