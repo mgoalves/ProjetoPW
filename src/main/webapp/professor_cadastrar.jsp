@@ -1,5 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8"%>
-<!DOCTYPE html>
+<%@ page contentType="text/html; charset=UTF-8"%><!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="utf-8">
@@ -36,23 +35,21 @@
 		<div class="container-fluid">
 
 			<!--############# Linha Cabeçalho #############-->
-			<%@include file="includes/aluno/aluno_cabecalho.jsp"%>
+            <%@include file="includes/professor/professor_cabecalho.jsp"%>
 			<!-- ############# FIM do Cabeçalho #############-->
 
 			<!-- ############# Linha principal ############# -->
 			<div class="row margem-top-15px">
 
-				<!--############# Menu Lateral #############-->
+				<!--############# MENU LATERAL #############-->
 				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 menu-lateral">
 					<%@include file="menuLateral.jsp"%>
 				</div>
-				<!--############# Menu Lateral #############-->
+				<!--############# MENU LATERAL #############-->
 
 				<!--############# FAIXA DE OPÇÕES #############-->
-				
-				<%@include file="includes/aluno/aluno_faixa_opcoes.jsp"%>
-
-				<!--############# FAIXA DE OPÇÕES #############-->
+                <%@ include file="includes/professor/professor_faixa_opcoes.jsp"%>
+                <!--############# FAIXA DE OPÇÕES #############-->
 
 				<!-- ############# Conteudo ############# -->
 				<div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
@@ -149,10 +146,15 @@
 					</div>
 					<!-- FIM Div Conteudo -->
 
-				</div><!-- conteudo -->
+
+				</div>
+				<!-- conteudo -->
 				<!-- ############# FIM do conteudo ############# -->
 
-			</div><!-- Linha principal -->
+
+
+			</div>
+			<!-- Linha principal -->
 			<!-- ############# FIM da Linha principal ############# -->
 
 			<!-- ############# INÍCIO DO RODAPÉ ############# -->

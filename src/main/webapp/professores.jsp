@@ -1,4 +1,5 @@
-<%@ page contentType="text/html; charset=UTF-8"%><!DOCTYPE html>
+<%@ page contentType="text/html; charset=UTF-8"%>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="utf-8">
@@ -36,7 +37,7 @@
 
 			<!--############# Linha Cabeçalho #############-->
 			<div class="row titulo">
-				<h1>Gestão de Alunos</h1>
+				<h1>Gestão de Professores</h1>
 			</div>
 			<!-- ############# FIM do Cabeçalho #############-->
 
@@ -71,17 +72,17 @@
 					</div>
 					<!-- Pesquisar -->
 
-					<!-- Botões de opções do menu do topo-->
+					<!-- Botões de opções -->
 					<div id="opcoes" class="row botoes">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<a class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
-								href="cadastrar_aluno.jsp" role="button">Cadastrar</a> 
+								href="professor_cadastrar.jsp" role="button">Cadastrar</a> 
                             <a class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
 								href="editar.jsp" role="button">Editar</a> 
                             <a class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
-								href="excluir.jsp" role="button">Excluir</a> 
+								href="excluir.jsp" role="button">Excluir</a>
                             <a class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
-								href="historico.jsp" role="button">Histórico</a>
+								href="excluir.jsp" role="button">Listar</a>
 						</div>
 					</div>
 					<!-- Botões de opções -->
@@ -93,95 +94,7 @@
 				<div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
 
 					<!-- Div Conteudo -->
-					<div class="conteudo">
-
-						<h3>Aluno</h3>
-						<form class="form-horizontal">
-
-							<div class="form-group">
-								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Matrícula</label>
-								<div class="col-lg-4 col-md-7 col-sm-9 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarMatricula"
-										placeholder="Matrícula">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Nome</label>
-								<div class="col-lg-4 col-md-7 col-sm-9 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
-										placeholder="Nome">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Nascimento</label>
-								<div class="col-lg-3 col-md-3 col-sm-5 col-xs-12">
-									<input class="form-control" type="date" value="aaaa-mm-dd"
-										id="example-date-input">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Mãe</label>
-								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
-										placeholder="Nome da mãe">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">RG</label>
-								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
-										placeholder="RG">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">CPF</label>
-								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
-										placeholder="CPF">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Cidade</label>
-								<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
-										placeholder="Cidade">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Bairro</label>
-								<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
-										placeholder="Bairro">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Logradouro</label>
-								<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
-										placeholder="Logradouro">
-								</div>
-							</div>
-
-
-							<div class="form-group">
-								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Número</label>
-								<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
-										placeholder="Número">
-								</div>
-							</div>
-
-						</form>
-
-					</div>
+					<div class="conteudo"></div>
 					<!-- FIM Div Conteudo -->
 
 
