@@ -28,9 +28,9 @@
                 class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
                 href="professor_cadastrar.jsp" role="button">Cadastrar</a> <a
                 class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
-                href="#" role="button">Editar</a> <a
+                href="professor_editar.jsp" role="button">Editar</a> <a
                 class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
-                href="#" role="button">Excluir</a> <a
+                href="professor_excluir" role="button">Excluir</a> <a
                 class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
                 href="professor_listar.jsp" role="button">Listar</a>
         </div>
