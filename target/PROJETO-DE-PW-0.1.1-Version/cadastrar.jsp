@@ -82,79 +82,65 @@
                       <form class="form-horizontal">
 
                           <div class="form-group">
-                              <label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Matrícula</label>
+                              <label class="col-lg-1 col-md-2 col-sm-3 col-xs-1 control-label">Matrícula</label>
                               <div class="col-lg-4 col-md-7 col-sm-9 col-xs-12">
                                 <input type="text" class="form-control" id="cadastrarMatricula" placeholder="Matrícula">
                             </div>
                         </div>
 
                         <div class="form-group">
-                          <label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Nome</label>
+                          <label class="col-lg-1 col-md-2 col-sm-3 col-xs-1 control-label">Nome</label>
                           <div class="col-lg-4 col-md-7 col-sm-9 col-xs-12">
                             <input type="text" class="form-control" id="cadastrarNome" placeholder="Nome">
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Nascimento</label>
+                        <label class="col-lg-1 col-md-2 col-sm-3 col-xs-1 control-label">Nascimento</label>
                         <div class="col-lg-3 col-md-3 col-sm-5 col-xs-12">
                           <input class="form-control" type="date" value="aaaa-mm-dd" id="example-date-input">
                       </div>
                   </div>
 
                   <div class="form-group">
-                  <label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Mãe</label>
+                      <label class="col-lg-1 col-md-2 col-sm-3 col-xs-1 control-label">RG</label>
                       <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-                        <input type="text" class="form-control" id="cadastrarNome" placeholder="Nome da mãe">
+                        <input type="text" class="form-control" id="cadastrarNome" placeholder="RG">
                     </div>
                 </div>
 
                 <div class="form-group">
-                  <label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">RG</label>
-                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-                    <input type="text" class="form-control" id="cadastrarNome" placeholder="RG">
+                  <label class="col-lg-1 col-md-2 col-sm-3 col-xs-1 control-label">Cidade</label>
+                  <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                    <input type="text" class="form-control" id="cadastrarNome" placeholder="Cidade">
                 </div>
             </div>
 
             <div class="form-group">
-                  <label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">CPF</label>
-                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-                    <input type="text" class="form-control" id="cadastrarNome" placeholder="CPF">
+                <label class="col-lg-1 col-md-2 col-sm-3 col-xs-1 control-label">Bairro</label>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                    <input type="text" class="form-control" id="cadastrarNome" placeholder="Bairro">
                 </div>
             </div>
 
             <div class="form-group">
-              <label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Cidade</label>
-              <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                <input type="text" class="form-control" id="cadastrarNome" placeholder="Cidade">
+                <label class="col-lg-1 col-md-2 col-sm-3 col-xs-1 control-label">Logadouro</label>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                    <input type="text" class="form-control" id="cadastrarNome" placeholder="Logadouro">
+                </div>
             </div>
-        </div>
 
-        <div class="form-group">
-            <label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Bairro</label>
-            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                <input type="text" class="form-control" id="cadastrarNome" placeholder="Bairro">
+
+            <div class="form-group">
+                <label class="col-lg-1 col-md-2 col-sm-3 col-xs-1 control-label">Logadouro</label>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                    <input type="text" class="form-control" id="cadastrarNome" placeholder="Logadouro">
+                </div>
             </div>
-        </div>
 
-        <div class="form-group">
-            <label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Logradouro</label>
-            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                <input type="text" class="form-control" id="cadastrarNome" placeholder="Logradouro">
-            </div>
-        </div>
+        </form>
 
-
-        <div class="form-group">
-            <label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Número</label>
-            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-                <input type="text" class="form-control" id="cadastrarNome" placeholder="Número">
-            </div>
-        </div>
-
-    </form>
-
-</div> <!-- FIM Div Conteudo -->
+    </div> <!-- FIM Div Conteudo -->
 
 
 </div><!-- conteudo -->
