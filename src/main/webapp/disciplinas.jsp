@@ -36,7 +36,7 @@
         <div class="container-fluid">
 
             <!--############# INÍCIO DO CABEÇALHO #############-->
-            <%@include file="includes/aluno/disciplina_cabecalho.jsp"%>
+            <%@include file="includes/disciplina/disciplina_cabecalho.jsp"%>
             <!-- ############# FIM DO CABEÇALHO #############-->
 
             <!-- ############# Linha principal ############# -->
@@ -56,7 +56,7 @@
                 <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
 
                     <!-- Div Conteudo -->
-                    <div class="conteudo">Gestão de Alunos</div>
+                    <div class="conteudo">Gestão de Disciplinas</div>
                     <!-- FIM Div Conteudo -->
 
 

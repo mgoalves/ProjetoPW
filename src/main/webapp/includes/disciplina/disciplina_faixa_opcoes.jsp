@@ -26,13 +26,13 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <a
                 class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
-                href="professor_cadastrar.jsp" role="button">Cadastrar</a> <a
+                href="disciplina_cadastrar.jsp" role="button">Cadastrar</a> <a
                 class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
-                href="#" role="button">Editar</a> <a
+                href="disciplina_editar" role="button">Editar</a> <a
                 class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
-                href="#" role="button">Excluir</a> <a
+                href="disciplina_excluir" role="button">Excluir</a> <a
                 class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
-                href="professor_listar.jsp" role="button">Listar</a>
+                href="disciplina_listar.jsp" role="button">Listar</a>
         </div>
     </div>
     <!-- Botões de opções -->
