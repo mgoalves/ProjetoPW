@@ -35,9 +35,9 @@
 
 		<div class="container-fluid">
 
-			<!--############# INÍCIO DO CABEÇALHO #############-->
-			<%@include file="includes/aluno/aluno_cabecalho.jsp"%>
-			<!-- ############# FIM DO CABEÇALHO #############-->
+			<!--############# Linha Cabeçalho #############-->
+            <%@include file="includes/professor/professor_cabecalho.jsp"%>
+			<!-- ############# FIM do Cabeçalho #############-->
 
 			<!-- ############# Linha principal ############# -->
 			<div class="row margem-top-15px">
@@ -49,29 +49,25 @@
 				<!-- Menu Lateral -->
 
 				<!--############# FAIXA DE OPÇÕES #############-->
-				<%@include file="includes/aluno/aluno_faixa_opcoes.jsp"%>
-				<!--############# FAIXA DE OPÇÕES #############-->
-				
+                <%@ include file="includes/professor/professor_faixa_opcoes.jsp"%>
+                <!--############# FAIXA DE OPÇÕES #############-->
+	
+
+
 				<!-- ############# Conteudo ############# -->
 				<div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
-
 					<!-- Div Conteudo -->
-					<div class="conteudo">Gestão de Alunos</div>
+					<div class="conteudo">Gestão de Professores</div>
 					<!-- FIM Div Conteudo -->
-
-
-				</div>
-				<!-- conteudo -->
+				</div> <!-- conteudo -->
 				<!-- ############# FIM do conteudo ############# -->
 
 
 
-			</div>
-			<!-- Linha principal -->
+			</div> <!-- Linha principal -->
 			<!-- ############# FIM da Linha principal ############# -->
 
 			<!-- Linha rodape -->
-
 			<!-- ############# INÍCIO DO RODAPÉ ############# -->
 			<%@ include file="includes/rodape.jsp"%>
 			<!-- ############# FIM DO RODAPÉ ############# -->

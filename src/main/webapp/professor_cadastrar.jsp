@@ -1,5 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8"%>
-<!DOCTYPE html>
+<%@ page contentType="text/html; charset=UTF-8"%><!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="utf-8">
@@ -35,24 +34,22 @@
 
 		<div class="container-fluid">
 
-			<!--############# INÍCIO DO CABEÇALHO #############-->
-			<%@include file="includes/aluno/aluno_cabecalho.jsp"%>
-			<!-- ############# FIM DO CABEÇALHO #############-->
+			<!--############# Linha Cabeçalho #############-->
+            <%@include file="includes/professor/professor_cabecalho.jsp"%>
+			<!-- ############# FIM do Cabeçalho #############-->
 
 			<!-- ############# Linha principal ############# -->
 			<div class="row margem-top-15px">
 
-				<!--############# Menu Lateral #############-->
+				<!--############# MENU LATERAL #############-->
 				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 menu-lateral">
 					<%@include file="menuLateral.jsp"%>
 				</div>
-				<!--############# Menu Lateral #############-->
-
+				<!--############# MENU LATERAL #############-->
 
 				<!--############# FAIXA DE OPÇÕES #############-->
-				<%@include file="includes/aluno/aluno_faixa_opcoes.jsp"%>
-				<!--############# FAIXA DE OPÇÕES #############-->
-				
+                <%@ include file="includes/professor/professor_faixa_opcoes.jsp"%>
+                <!--############# FAIXA DE OPÇÕES #############-->
 
 				<!-- ############# Conteudo ############# -->
 				<div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
@@ -60,7 +57,7 @@
 					<!-- Div Conteudo -->
 					<div class="conteudo">
 
-						<h3>Aluno</h3>
+						<h3>Professor</h3>
 						<form class="form-horizontal">
 
 							<div class="form-group">
@@ -87,72 +84,17 @@
 								</div>
 							</div>
 
-							<div class="form-group">
-								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Mãe</label>
-								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
-										placeholder="Nome da mãe">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">RG</label>
-								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
-										placeholder="RG">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">CPF</label>
-								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
-										placeholder="CPF">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Cidade</label>
-								<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
-										placeholder="Cidade">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Bairro</label>
-								<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
-										placeholder="Bairro">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Logradouro</label>
-								<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
-										placeholder="Logradouro">
-								</div>
-							</div>
-
-
-							<div class="form-group">
-								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Número</label>
-								<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
-										placeholder="Número">
-								</div>
-							</div>
-
 						</form>
 
 					</div>
 					<!-- FIM Div Conteudo -->
 
-				</div><!-- conteudo -->
+				</div>
+				<!-- conteudo -->
 				<!-- ############# FIM do conteudo ############# -->
 
-			</div><!-- Linha principal -->
+			</div>
+			<!-- Linha principal -->
 			<!-- ############# FIM da Linha principal ############# -->
 
 			<!-- ############# INÍCIO DO RODAPÉ ############# -->
