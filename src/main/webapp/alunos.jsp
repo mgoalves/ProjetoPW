@@ -35,11 +35,9 @@
 
 		<div class="container-fluid">
 
-			<!--############# Linha Cabeçalho #############-->
-			<div class="row titulo">
-				<h1>Gestão de Alunos</h1>
-			</div>
-			<!-- ############# FIM do Cabeçalho #############-->
+			<!--############# INÍCIO DO CABEÇALHO #############-->
+			<%@include file="includes/aluno/aluno_cabecalho.jsp"%>
+			<!-- ############# FIM DO CABEÇALHO #############-->
 
 			<!-- ############# Linha principal ############# -->
 			<div class="row margem-top-15px">
@@ -50,52 +48,15 @@
 				</div>
 				<!-- Menu Lateral -->
 
-				<!-- Pesquisar e Botões de opções -->
-				<div class="col-lg-10 col-md-9 col-sm-8 col-xs-12 pesquisaBotoes">
-
-					<!-- Pesquisar -->
-					<div class="row pesquisar">
-						<form>
-							<div class="form-group">
-								<div class="col-lg-9 col-md-9 col-sm-8 col-xs-10">
-									<input type="text" class="form-control" id="pesquisar"
-										placeholder="Nome ou Matrícula">
-								</div>
-							</div>
-							<button type="submit"
-								class="col-lg-2 col-md-2 col-sm-3 col-xs-1 hidden-xs btn btn-primary">Pesquisar</button>
-							<button type="submit"
-								class="col-xs-1 hidden-lg hidden-md hidden-sm btn btn-primary botao-buscar-mobile">
-								<span class="glyphicon glyphicon-search"></span>
-							</button>
-						</form>
-					</div>
-					<!-- Pesquisar -->
-
-					<!-- Botões de opções -->
-					<div id="opcoes" class="row botoes">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<a
-								class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
-								href="aluno_cadastrar.jsp" role="button">Cadastrar</a> <a
-								class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
-								href="editar.jsp" role="button">Editar</a> <a
-								class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
-								href="excluir.jsp" role="button">Excluir</a> <a
-								class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
-								href="historico.jsp" role="button">Histórico</a>
-						</div>
-					</div>
-					<!-- Botões de opções -->
-
-				</div>
-				<!-- Pesquisar e Botões de opções -->
-
+				<!--############# FAIXA DE OPÇÕES #############-->
+				<%@include file="includes/aluno/aluno_faixa_opcoes.jsp"%>
+				<!--############# FAIXA DE OPÇÕES #############-->
+				
 				<!-- ############# Conteudo ############# -->
 				<div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
 
 					<!-- Div Conteudo -->
-					<div class="conteudo"></div>
+					<div class="conteudo">Gestão de Alunos</div>
 					<!-- FIM Div Conteudo -->
 
 
@@ -110,15 +71,10 @@
 			<!-- ############# FIM da Linha principal ############# -->
 
 			<!-- Linha rodape -->
-			<footer>
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 rodape">
-						<p>Sistema de Gestão de alunos - 2017</p>
-					</div>
-					<!-- rodape -->
-				</div>
-			</footer>
-			<!-- FIM Linha rodape -->
+
+			<!-- ############# INÍCIO DO RODAPÉ ############# -->
+			<%@ include file="includes/rodape.jsp"%>
+			<!-- ############# FIM DO RODAPÉ ############# -->
 
 		</div>
 		<!-- div container -->

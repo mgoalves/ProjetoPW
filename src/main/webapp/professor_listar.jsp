@@ -1,4 +1,5 @@
-<%@ page contentType="text/html; charset=UTF-8"%><!DOCTYPE html>
+<%@ page contentType="text/html; charset=UTF-8"%>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="utf-8">
@@ -41,62 +42,66 @@
 			<!-- ############# Linha principal ############# -->
 			<div class="row margem-top-15px">
 
-				<!--############# MENU LATERAL #############-->
+				<!-- Menu Lateral -->
 				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 menu-lateral">
 					<%@include file="menuLateral.jsp"%>
 				</div>
-				<!--############# MENU LATERAL #############-->
+				<!-- Menu Lateral -->
 
 				<!--############# FAIXA DE OPÇÕES #############-->
                 <%@ include file="includes/professor/professor_faixa_opcoes.jsp"%>
                 <!--############# FAIXA DE OPÇÕES #############-->
+	
+
 
 				<!-- ############# Conteudo ############# -->
 				<div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
-
 					<!-- Div Conteudo -->
 					<div class="conteudo">
-
-						<h3>Professor</h3>
-						<form class="form-horizontal">
-
-							<div class="form-group">
-								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Matrícula</label>
-								<div class="col-lg-4 col-md-7 col-sm-9 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarMatricula"
-										placeholder="Matrícula">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Nome</label>
-								<div class="col-lg-4 col-md-7 col-sm-9 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
-										placeholder="Nome">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Nascimento</label>
-								<div class="col-lg-3 col-md-3 col-sm-5 col-xs-12">
-									<input class="form-control" type="date" value="aaaa-mm-dd"
-										id="example-date-input">
-								</div>
-							</div>
-
-						</form>
-
-					</div>
-					<!-- FIM Div Conteudo -->
-
-				</div>
-				<!-- conteudo -->
+                        <table class="table table-hover">
+                            <tr>
+                                <th>Matrícula</th>
+                                <th>Nome</th>
+                                <th>Telefone</th>
+                                <th>Email</th>
+                                <th colspan="2">Ações</th>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Professor 01</td>
+                                <td>(62)44444-4444</td>
+                                <td>professor01@nossaescola.com</td>
+                                <td><a href="#">Editar</a></td>
+                                <td><a href="#">Excluir</a></td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>Professor 02</td>
+                                <td>(62)33333-3333</td>
+                                <td>professor02@nossaescola.com</td>
+                                <td><a href="#">Editar</a></td>
+                                <td><a href="#">Excluir</a></td>
+                            </tr>
+                            <tr>
+                                <td>30</td>
+                                <td>Professor 03</td>
+                                <td>(62)99999-9999</td>
+                                <td>professor03@nossaescola.com</td>
+                                <td><a href="#">Editar</a></td>
+                                <td><a href="#">Excluir</a></td>
+                            </tr>
+                            
+                        </table>
+                    </div> <!-- FIM Div Conteudo -->
+				</div> <!-- conteudo -->
 				<!-- ############# FIM do conteudo ############# -->
 
-			</div>
-			<!-- Linha principal -->
+
+
+			</div> <!-- Linha principal -->
 			<!-- ############# FIM da Linha principal ############# -->
 
+			<!-- Linha rodape -->
 			<!-- ############# INÍCIO DO RODAPÉ ############# -->
 			<%@ include file="includes/rodape.jsp"%>
 			<!-- ############# FIM DO RODAPÉ ############# -->

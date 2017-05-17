@@ -35,9 +35,9 @@
 
 		<div class="container-fluid">
 
-			<!--############# Linha Cabeçalho #############-->
+			<!--############# INÍCIO DO CABEÇALHO #############-->
 			<%@include file="includes/aluno/aluno_cabecalho.jsp"%>
-			<!-- ############# FIM do Cabeçalho #############-->
+			<!-- ############# FIM DO CABEÇALHO #############-->
 
 			<!-- ############# Linha principal ############# -->
 			<div class="row margem-top-15px">
@@ -48,11 +48,11 @@
 				</div>
 				<!--############# Menu Lateral #############-->
 
-				<!--############# FAIXA DE OPÇÕES #############-->
-				
-				<%@include file="includes/aluno/aluno_faixa_opcoes.jsp"%>
 
 				<!--############# FAIXA DE OPÇÕES #############-->
+				<%@include file="includes/aluno/aluno_faixa_opcoes.jsp"%>
+				<!--############# FAIXA DE OPÇÕES #############-->
+				
 
 				<!-- ############# Conteudo ############# -->
 				<div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
