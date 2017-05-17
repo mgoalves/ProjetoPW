@@ -28,9 +28,9 @@
                 class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
                 href="disciplina_cadastrar.jsp" role="button">Cadastrar</a> <a
                 class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
-                href="disciplina_editar" role="button">Editar</a> <a
+                href="disciplina_editar.jsp" role="button">Editar</a> <a
                 class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
-                href="disciplina_excluir" role="button">Excluir</a> <a
+                href="disciplina_excluir.jsp" role="button">Excluir</a> <a
                 class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
                 href="disciplina_listar.jsp" role="button">Listar</a>
         </div>
