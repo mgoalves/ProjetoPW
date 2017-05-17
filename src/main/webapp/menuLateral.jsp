@@ -55,7 +55,7 @@
 				<!-- PROFESSORES -->
 
 				<!-- DISCIPLINA -->
-				<li><a href="#"> <!-- Esse menu so parece para celular -->
+				<li><a href="#disciplina.jsp"> <!-- Esse menu so parece para celular -->
 						<div class="figure_32 hidden-lg hidden-md hidden-sm">
 							<img src="imagens/icones_menu_32/disciplina_32px.png"
 								alt="Menu Bot�o Disciplina"> <span>disciplina</span>
