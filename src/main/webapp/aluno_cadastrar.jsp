@@ -90,7 +90,7 @@
 							<div class="form-group">
 								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Mãe</label>
 								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
+									<input type="text" class="form-control" id="cadastrarMae"
 										placeholder="Nome da mãe">
 								</div>
 							</div>
@@ -98,7 +98,7 @@
 							<div class="form-group">
 								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">RG</label>
 								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
+									<input type="text" class="form-control" id="cadastrarRG"
 										placeholder="RG">
 								</div>
 							</div>
@@ -106,7 +106,7 @@
 							<div class="form-group">
 								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">CPF</label>
 								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
+									<input type="text" class="form-control" id="cadastrarCPF"
 										placeholder="CPF">
 								</div>
 							</div>
@@ -114,7 +114,7 @@
 							<div class="form-group">
 								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Cidade</label>
 								<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
+									<input type="text" class="form-control" id="cadastrarCidade"
 										placeholder="Cidade">
 								</div>
 							</div>
@@ -122,7 +122,7 @@
 							<div class="form-group">
 								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Bairro</label>
 								<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
+									<input type="text" class="form-control" id="cadastrarBairro"
 										placeholder="Bairro">
 								</div>
 							</div>
@@ -130,7 +130,7 @@
 							<div class="form-group">
 								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Logradouro</label>
 								<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
+									<input type="text" class="form-control" id="cadastrarLogradouro"
 										placeholder="Logradouro">
 								</div>
 							</div>
@@ -139,7 +139,7 @@
 							<div class="form-group">
 								<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Número</label>
 								<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-									<input type="text" class="form-control" id="cadastrarNome"
+									<input type="text" class="form-control" id="cadastrarNumero"
 										placeholder="Número">
 								</div>
 							</div>
