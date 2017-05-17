@@ -31,7 +31,7 @@
 				class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
 				href="aluno_excluir.jsp" role="button">Excluir</a> <a
 				class="col-lg-2 col-md-2 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
-				href="#" role="button">Histórico</a>
+				href="aluno_historico.jsp" role="button">Histórico</a>
 		</div>
 	</div>
 	<!-- Botões de opções -->
