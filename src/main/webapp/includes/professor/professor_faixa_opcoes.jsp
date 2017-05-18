@@ -24,13 +24,13 @@
 <div id="opcoes" class="row botoes">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <a class="col-lg-2 col-md-3 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary "
-        href="aluno_cadastrar.jsp" role="button"><span class="glyphicon glyphicon-plus"></span> Cadastrar</a>
+        href="professor_cadastrar.jsp" role="button"><span class="glyphicon glyphicon-plus"></span> Cadastrar</a>
         <a class="col-lg-2 col-md-3 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
-        href="aluno_editar.jsp" role="button"><span class="glyphicon glyphicon-pencil"></span> Editar</a>
+        href="professor_editar.jsp" role="button"><span class="glyphicon glyphicon-pencil"></span> Editar</a>
         <a class="col-lg-2 col-md-3 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
-        href="aluno_excluir.jsp" role="button"><span class="glyphicon glyphicon-remove"></span> Excluir</a>
+        href="professor_excluir.jsp" role="button"><span class="glyphicon glyphicon-remove"></span> Excluir</a>
         <a class="col-lg-2 col-md-3 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
-        href="aluno_historico.jsp" role="button"><span class="glyphicon glyphicon-list"></span> Listar</a>
+        href="professor_historico.jsp" role="button"><span class="glyphicon glyphicon-list"></span> Listar</a>
     </div>
 </div>
 <!-- Botões de opções -->
