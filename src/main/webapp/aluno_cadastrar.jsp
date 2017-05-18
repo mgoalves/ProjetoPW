@@ -154,6 +154,15 @@
 										</div>
 									</div>
 
+									<div class="form-group">
+										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label"></label>
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+										<button class="col-lg-3 col-md-4 col-sm-6 col-xs-12 btn btn-primary" type="submit">Salvar</button>
+										</div>
+									</div>
+
+
+									
 								</form>
 
 							</div><!-- Painel corpo Conteudo -->
