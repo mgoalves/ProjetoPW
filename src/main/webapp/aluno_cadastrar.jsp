@@ -67,7 +67,7 @@
 
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Matrícula</label>
-										<div class="col-lg-2 col-md-7 col-sm-9 col-xs-12">
+										<div class="col-lg-2 col-md-5 col-sm-9 col-xs-12">
 											<input type="text" class="form-control" id="cadastrarMatricula"
 											placeholder="Matrícula">
 										</div>
@@ -91,7 +91,7 @@
 
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Mãe</label>
-										<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+										<div class="col-lg-2 col-md-7 col-sm-9 col-xs-12">
 											<input type="text" class="form-control" id="cadastrarMae"
 											placeholder="Nome da mãe">
 										</div>
@@ -148,7 +148,7 @@
 
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Número</label>
-										<div class="col-lg-1 col-md-3 col-sm-6 col-xs-12">
+										<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
 											<input type="number" class="form-control" id="cadastrarNumero"
 											placeholder="Número">
 										</div>
@@ -161,8 +161,6 @@
 										</div>
 									</div>
 
-
-									
 								</form>
 
 							</div><!-- Painel corpo Conteudo -->
