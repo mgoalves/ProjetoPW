@@ -57,7 +57,9 @@
 
 					<!-- Div Conteudo -->
 					<div class="conteudo">
-					<div class="well well-lg">Gestão de Alunos</div>
+						<div class="well well-sm">
+						<p class="conteudo-h1">Gestão de Alunos</p>
+						</div>
 					</div>
 					<!-- FIM Div Conteudo -->
 
