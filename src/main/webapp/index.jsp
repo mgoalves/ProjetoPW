@@ -11,7 +11,7 @@
 		<div class="container-fluid">
 
 			<!--############# Linha Cabeçalho #############-->
-				<%@include file="includes/cabecalho.jsp"%>
+			<%@include file="includes/cabecalho.jsp"%>
 			<!-- ############# FIM do Cabeçalho #############-->
 
 			<!-- ############# Linha principal ############# -->
@@ -19,12 +19,9 @@
 
 				<!-- Menu Lateral -->
 				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 menu-lateral">
-
 					<%@include file="menuLateral.jsp"%>
-
 				</div>
 				<!-- Menu Lateral -->
-
 
 				<!-- ############# Conteudo ############# -->
 				<div id="conteudo" class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
@@ -37,8 +34,7 @@
 				<%@ include file="includes/rodape.jsp"%>
 				<!-- ############# FIM DO RODAPÉ ############# -->
 
-			</div>
-			<!-- Linha principal -->
+			</div><!-- Linha principal -->
 			<!-- ############# FIM da Linha principal ############# -->
 
 
