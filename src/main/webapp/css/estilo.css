@@ -13,12 +13,14 @@
 .img-logo-mobile img{
     margin: auto;
     width: 320px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .img-logo{
     margin: auto;
-    width: 388px;
-    height:120px; 
+    width: 364px;
+    height: 128px; 
     margin-top: 15px;
     margin-bottom: 15px;
 }
