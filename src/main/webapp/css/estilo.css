@@ -19,7 +19,7 @@
 }
 
 .botoes a{
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 1.0);
     text-transform: uppercase;
     font-size: 12pt;
     font-weight: 700;
@@ -38,17 +38,18 @@
 
 .pesquisar button{
     text-transform: uppercase;
-    font-size: 1.0em;
+    font-size: 12pt;
+    font-weight: 600;
 
 }
 
 .pesquisaBotoes {
-background-color: #fff;
+    background-color: #fff;
 }
 
 
 
-/* menu lateral */
+/**************** menu lateral **************************/
 .menu-lateral {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -70,11 +71,16 @@ background-color: #fff;
 }
 /**********************************/
 
-.conteudo{
-    background-color: #f3f3f3;
-    margin-top: 30px;
-    padding: 15px;
+/************* CONTEUDO **************/
+.conteudo p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16pt;
+    font-weight: 600;
+    color: #666;
+    padding: -10px;
 }
+/***********************************/
 
 .destaque1 {
     background-color: rgb(255, 0, 0);
@@ -154,6 +160,8 @@ background-color: #fff;
  font-weight: 400;
 }
 /********************/
+
+
 
 /*
 font-family: 'Roboto', sans-serif;
