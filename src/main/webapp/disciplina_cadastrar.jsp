@@ -3,6 +3,14 @@
 <html lang="pt-br">
 <head>
 	<%@include file="includes/head.jsp"%>
+
+	<!--############# Para rolar para o formulario #############-->
+	<script type="text/javascript">
+		$(document).ready(function() { 
+			window.location.href='#conteudo';
+		});
+	</script>
+	
 </head>
 
 <body>
