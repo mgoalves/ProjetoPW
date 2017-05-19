@@ -24,21 +24,20 @@
 				</div>
 				<!--############# Menu Lateral #############-->
 
-				<!--############# Menu Lateral #############-->
-				<div class="">
-					Editar aluno
-				</div>
-				<!--############# Menu Lateral #############-->
-				
-
 				<!-- ############# Conteudo ############# -->
 				<div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
+
+					<!--############# TÍTULO PÁGINA #############-->
+					<%@include file="includes/aluno/aluno-titulo-pagina.jsp"%>
+					<!--############# FIM TÍTULO PÁGINA #############-->
 
 					<!-- Div Conteudo -->
 					<div class="conteudo">
 						<hr/>
 						<div class="panel panel-default">
-							<div class="panel-heading">Editar Aluno</div>
+							<div class="panel-heading titulo-painel">
+								<h2>Editar</h2>
+							</div>
 							<div class="panel-body">
 
 								<form class="form-horizontal" id="cadastraAluno">

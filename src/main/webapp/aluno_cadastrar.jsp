@@ -33,18 +33,22 @@
 				</div>
 				<!--############# Menu Lateral #############-->
 
-				<!--############# FAIXA DE OPÇÕES #############-->
-				<%@include file="includes/aluno/aluno_faixa_opcoes.jsp"%>
-				<!--############# FAIXA DE OPÇÕES #############-->
 
 				<!-- ############# Conteudo ############# -->
 				<div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
 
+					<!--############# TÍTULO PÁGINA #############-->
+					<%@include file="includes/aluno/aluno-titulo-pagina.jsp"%>
+					<!--############# FIM TÍTULO PÁGINA #############-->
+
 					<!-- Div Conteudo -->
 					<div id="conteudo">
+					
 						<hr/>
 						<div class="panel panel-default">
-							<div class="panel-heading">Cadastro de Aluno</div>
+							<div class="panel-heading titulo-painel">
+								<h2>Cadastro</h2>
+							</div>
 							<div class="panel-body">
 
 								<form class="form-horizontal" id="cadastraAluno">

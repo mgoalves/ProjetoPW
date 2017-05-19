@@ -24,19 +24,20 @@
 				</div>
 				<!-- Menu Lateral -->
 
-				<!--############# FAIXA DE OPÇÕES #############-->
-				<%@ include file="includes/professor/professor_faixa_opcoes.jsp"%>
-				<!--############# FAIXA DE OPÇÕES #############-->
-
-
-
 				<!-- ############# Conteudo ############# -->
 				<div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
+
+					<!--############# TÍTULO PÁGINA #############-->
+					<%@include file="includes/professor/professor-titulo-pagina.jsp"%>
+					<!--############# FIM TÍTULO PÁGINA #############-->
+
+					<!--############# FAIXA DE OPÇÕES #############-->
+					<%@ include file="includes/professor/professor_faixa_opcoes.jsp"%>
+					<!--############# FAIXA DE OPÇÕES #############-->
+
 					<!-- Div Conteudo -->
 					<div class="conteudo">
-						<div class="well well-sm">
-							<p>Gestão de Professores</p>
-						</div>
+						
 					</div>
 					<!-- FIM Div Conteudo -->
 				</div> <!-- conteudo -->

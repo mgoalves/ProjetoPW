@@ -49,8 +49,8 @@
     margin-right: 15px;
 }
 .botao-buscar-mobile{
- /* margin-left: 15px;*/
- width: auto;
+   /* margin-left: 15px;*/
+   width: auto;
 
 }
 
@@ -132,9 +132,9 @@
 }
 
 .figure_115 figcaption{
-   text-transform: uppercase;
-   text-align: center;
-   font-weight: bolder;
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: bolder;
 }
 /**********************************/
 
@@ -154,10 +154,10 @@
 }
 
 .figure_32 span{
-   text-transform: uppercase;
-   font-size:  14pt;
-   font-weight: bolder;
-   margin-left: 5px;
+ text-transform: uppercase;
+ font-size:  14pt;
+ font-weight: bolder;
+ margin-left: 5px;
 }
 /************************************/
 
@@ -175,6 +175,16 @@
     color: #1B1B1E;
     margin-left: 15px;
 }
+
+.titulo-painel h2{
+   font-family: 'Open Sans', sans-serif;
+   text-transform: uppercase;
+   font-size: 14pt;
+   font-weight: 800;
+   color: #373F51;
+   line-height: 0pt;
+   
+}
 /*************************************/
 
 
@@ -186,17 +196,17 @@
 
 /* Rodapé */
 .rodape {
- background-color: #0275D8;
- margin-top: 15px;
- padding: 5px;
+   background-color: #0275D8;
+   margin-top: 15px;
+   padding: 5px;
 }
 
 .rodape p{
 
- text-align: center;
- font-size: 1.1em;
- color: #fff;
- font-weight: 400;
+   text-align: center;
+   font-size: 1.1em;
+   color: #fff;
+   font-weight: 400;
 }
 /********************/
 
