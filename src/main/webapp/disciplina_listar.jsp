@@ -32,7 +32,60 @@
             <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
 
                 <!-- Div Conteudo -->
-                <div class="conteudo">Disciplina Listar</div>
+                <div class="conteudo">
+                    <hr/>
+                    <div class="panel panel-default">
+                        <div class="panel-heading"> <center>Lista de Disciplinas</center> </div>
+                            <div class="panel-body">
+
+                                <table class="table table-hover">
+                                    <tr>
+                                        <th>Código</th>
+                                        <th>Nome</th>
+                                        <th>Duração</th>
+                                        <th colspan="2">Ações</th>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Língua Portuguesa</td>
+                                        <td>96</td>
+                                        <td><a href="#">Editar</a></td>
+                                        <td><a href="#">Excluir</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>Matemática</td>
+                                        <td>96</td>
+                                        <td><a href="#">Editar</a></td>
+                                        <td><a href="#">Excluir</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>30</td>
+                                        <td>Geografia Política</td>
+                                        <td>60</td>
+                                        <td><a href="#">Editar</a></td>
+                                        <td><a href="#">Excluir</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>40</td>
+                                        <td>Inglês Técnico</td>
+                                        <td>60</td>
+                                        <td><a href="#">Editar</a></td>
+                                        <td><a href="#">Excluir</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>50</td>
+                                        <td>Algorítimos</td>
+                                        <td>100</td>
+                                        <td><a href="#">Editar</a></td>
+                                        <td><a href="#">Excluir</a></td>
+                                    </tr>    
+                                </table>
+                           
+                            </div><!-- Painel corpo Conteudo -->
+                    </div><!-- Painel -->
+
+                </div>
                 <!-- FIM Div Conteudo -->
 
 

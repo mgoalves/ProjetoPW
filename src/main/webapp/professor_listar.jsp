@@ -34,40 +34,55 @@
          <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
              <!-- Div Conteudo -->
              <div class="conteudo">
-                <table class="table table-hover">
-                    <tr>
-                        <th>Matrícula</th>
-                        <th>Nome</th>
-                        <th>Telefone</th>
-                        <th>Email</th>
-                        <th colspan="2">Ações</th>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>Professor 01</td>
-                        <td>(62)44444-4444</td>
-                        <td>professor01@nossaescola.com</td>
-                        <td><a href="#">Editar</a></td>
-                        <td><a href="#">Excluir</a></td>
-                    </tr>
-                    <tr>
-                        <td>20</td>
-                        <td>Professor 02</td>
-                        <td>(62)33333-3333</td>
-                        <td>professor02@nossaescola.com</td>
-                        <td><a href="#">Editar</a></td>
-                        <td><a href="#">Excluir</a></td>
-                    </tr>
-                    <tr>
-                        <td>30</td>
-                        <td>Professor 03</td>
-                        <td>(62)99999-9999</td>
-                        <td>professor03@nossaescola.com</td>
-                        <td><a href="#">Editar</a></td>
-                        <td><a href="#">Excluir</a></td>
-                    </tr>
-                    
-                </table>
+
+
+                <hr/>
+                    <div class="panel panel-default">
+                        <div class="panel-heading"> <center>Lista de Professores</center> </div>
+                            <div class="panel-body">
+
+                                <table class="table table-hover">
+                                    <tr>
+                                        <th>Matrícula</th>
+                                        <th>Nome</th>
+                                        <th>Telefone</th>
+                                        <th>Email</th>
+                                        <th colspan="2">Ações</th>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Professor 01</td>
+                                        <td>(62)44444-4444</td>
+                                        <td>professor01@nossaescola.com</td>
+                                        <td><a href="#">Editar</a></td>
+                                        <td><a href="#">Excluir</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>Professor 02</td>
+                                        <td>(62)33333-3333</td>
+                                        <td>professor02@nossaescola.com</td>
+                                        <td><a href="#">Editar</a></td>
+                                        <td><a href="#">Excluir</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>30</td>
+                                        <td>Professor 03</td>
+                                        <td>(62)99999-9999</td>
+                                        <td>professor03@nossaescola.com</td>
+                                        <td><a href="#">Editar</a></td>
+                                        <td><a href="#">Excluir</a></td>
+                                    </tr>    
+                                </table>
+                           
+                            </div><!-- Painel corpo Conteudo -->
+                    </div><!-- Painel -->
+
+
+
+
+
+                
             </div> <!-- FIM Div Conteudo -->
         </div> <!-- conteudo -->
         <!-- ############# FIM do conteudo ############# -->
