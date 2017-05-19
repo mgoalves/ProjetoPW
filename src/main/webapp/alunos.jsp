@@ -11,9 +11,9 @@
 
 		<div class="container-fluid">
 
-			<!--############# INÍCIO DO CABEÇALHO #############-->
-			<%@include file="includes/aluno/aluno_cabecalho.jsp"%>
-			<!-- ############# FIM DO CABEÇALHO #############-->
+			<!--############# Linha Cabeçalho #############-->
+			<%@include file="includes/cabecalho.jsp"%>
+			<!-- ############# FIM do Cabeçalho #############-->
 
 			<!-- ############# Linha principal ############# -->
 			<div class="row margem-top-15px">

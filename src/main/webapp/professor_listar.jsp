@@ -11,79 +11,79 @@
 
 		<div class="container-fluid">
 
-			<!--############# Linha Cabeçalho #############-->
-            <%@include file="includes/professor/professor_cabecalho.jsp"%>
-            <!-- ############# FIM do Cabeçalho #############-->
+           <!--############# Linha Cabeçalho #############-->
+           <%@include file="includes/cabecalho.jsp"%>
+           <!-- ############# FIM do Cabeçalho #############-->
 
-            <!-- ############# Linha principal ############# -->
-            <div class="row margem-top-15px">
+           <!-- ############# Linha principal ############# -->
+           <div class="row margem-top-15px">
 
-                <!-- Menu Lateral -->
-                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 menu-lateral">
-                   <%@include file="menuLateral.jsp"%>
-               </div>
-               <!-- Menu Lateral -->
+            <!-- Menu Lateral -->
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 menu-lateral">
+             <%@include file="menuLateral.jsp"%>
+         </div>
+         <!-- Menu Lateral -->
 
-               <!--############# FAIXA DE OPÇÕES #############-->
-               <%@ include file="includes/professor/professor_faixa_opcoes.jsp"%>
-               <!--############# FAIXA DE OPÇÕES #############-->
-               
-
-
-               <!-- ############# Conteudo ############# -->
-               <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
-                   <!-- Div Conteudo -->
-                   <div class="conteudo">
-                    <table class="table table-hover">
-                        <tr>
-                            <th>Matrícula</th>
-                            <th>Nome</th>
-                            <th>Telefone</th>
-                            <th>Email</th>
-                            <th colspan="2">Ações</th>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>Professor 01</td>
-                            <td>(62)44444-4444</td>
-                            <td>professor01@nossaescola.com</td>
-                            <td><a href="#">Editar</a></td>
-                            <td><a href="#">Excluir</a></td>
-                        </tr>
-                        <tr>
-                            <td>20</td>
-                            <td>Professor 02</td>
-                            <td>(62)33333-3333</td>
-                            <td>professor02@nossaescola.com</td>
-                            <td><a href="#">Editar</a></td>
-                            <td><a href="#">Excluir</a></td>
-                        </tr>
-                        <tr>
-                            <td>30</td>
-                            <td>Professor 03</td>
-                            <td>(62)99999-9999</td>
-                            <td>professor03@nossaescola.com</td>
-                            <td><a href="#">Editar</a></td>
-                            <td><a href="#">Excluir</a></td>
-                        </tr>
-                        
-                    </table>
-                </div> <!-- FIM Div Conteudo -->
-            </div> <!-- conteudo -->
-            <!-- ############# FIM do conteudo ############# -->
+         <!--############# FAIXA DE OPÇÕES #############-->
+         <%@ include file="includes/professor/professor_faixa_opcoes.jsp"%>
+         <!--############# FAIXA DE OPÇÕES #############-->
+         
 
 
+         <!-- ############# Conteudo ############# -->
+         <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
+             <!-- Div Conteudo -->
+             <div class="conteudo">
+                <table class="table table-hover">
+                    <tr>
+                        <th>Matrícula</th>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>Email</th>
+                        <th colspan="2">Ações</th>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Professor 01</td>
+                        <td>(62)44444-4444</td>
+                        <td>professor01@nossaescola.com</td>
+                        <td><a href="#">Editar</a></td>
+                        <td><a href="#">Excluir</a></td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Professor 02</td>
+                        <td>(62)33333-3333</td>
+                        <td>professor02@nossaescola.com</td>
+                        <td><a href="#">Editar</a></td>
+                        <td><a href="#">Excluir</a></td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>Professor 03</td>
+                        <td>(62)99999-9999</td>
+                        <td>professor03@nossaescola.com</td>
+                        <td><a href="#">Editar</a></td>
+                        <td><a href="#">Excluir</a></td>
+                    </tr>
+                    
+                </table>
+            </div> <!-- FIM Div Conteudo -->
+        </div> <!-- conteudo -->
+        <!-- ############# FIM do conteudo ############# -->
 
-        </div> <!-- Linha principal -->
-        <!-- ############# FIM da Linha principal ############# -->
 
-        <!-- Linha rodape -->
-        <!-- ############# INÍCIO DO RODAPÉ ############# -->
-        <%@ include file="includes/rodape.jsp"%>
-        <!-- ############# FIM DO RODAPÉ ############# -->
 
-    </div>
-    <!-- div container -->
+    </div> <!-- Linha principal -->
+    <!-- ############# FIM da Linha principal ############# -->
+
+    <!-- Linha rodape -->
+    <!-- ############# INÍCIO DO RODAPÉ ############# -->
+    <%@ include file="includes/rodape.jsp"%>
+    <!-- ############# FIM DO RODAPÉ ############# -->
+
+</div>
+<!-- div container -->
 </div>
 <!-- div wrapper -->
 

@@ -11,51 +11,51 @@
 
         <div class="container-fluid">
 
-            <!--############# INÍCIO DO CABEÇALHO #############-->
-            <%@include file="includes/disciplina/disciplina_cabecalho.jsp"%>
-            <!-- ############# FIM DO CABEÇALHO #############-->
+          <!--############# Linha Cabeçalho #############-->
+          <%@include file="includes/cabecalho.jsp"%>
+          <!-- ############# FIM do Cabeçalho #############-->
 
-            <!-- ############# Linha principal ############# -->
-            <div class="row margem-top-15px">
+          <!-- ############# Linha principal ############# -->
+          <div class="row margem-top-15px">
 
-                <!-- Menu Lateral -->
-                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 menu-lateral">
-                    <%@include file="menuLateral.jsp"%>
-                </div>
-                <!-- Menu Lateral -->
+            <!-- Menu Lateral -->
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 menu-lateral">
+                <%@include file="menuLateral.jsp"%>
+            </div>
+            <!-- Menu Lateral -->
 
-                <!--############# FAIXA DE OPÇÕES #############-->
-                <%@include file="includes/disciplina/disciplina_faixa_opcoes.jsp"%>
-                <!--############# FAIXA DE OPÇÕES #############-->
-                
-                <!-- ############# Conteudo ############# -->
-                <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
+            <!--############# FAIXA DE OPÇÕES #############-->
+            <%@include file="includes/disciplina/disciplina_faixa_opcoes.jsp"%>
+            <!--############# FAIXA DE OPÇÕES #############-->
+            
+            <!-- ############# Conteudo ############# -->
+            <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
 
-                    <!-- Div Conteudo -->
-                    <div class="conteudo">Disciplina exclusão</div>
-                    <!-- FIM Div Conteudo -->
-
-
-                </div>
-                <!-- conteudo -->
-                <!-- ############# FIM do conteudo ############# -->
-
+                <!-- Div Conteudo -->
+                <div class="conteudo">Disciplina exclusão</div>
+                <!-- FIM Div Conteudo -->
 
 
             </div>
-            <!-- Linha principal -->
-            <!-- ############# FIM da Linha principal ############# -->
+            <!-- conteudo -->
+            <!-- ############# FIM do conteudo ############# -->
 
-            <!-- Linha rodape -->
 
-            <!-- ############# INÍCIO DO RODAPÉ ############# -->
-            <%@ include file="includes/rodape.jsp"%>
-            <!-- ############# FIM DO RODAPÉ ############# -->
 
         </div>
-        <!-- div container -->
+        <!-- Linha principal -->
+        <!-- ############# FIM da Linha principal ############# -->
+
+        <!-- Linha rodape -->
+
+        <!-- ############# INÍCIO DO RODAPÉ ############# -->
+        <%@ include file="includes/rodape.jsp"%>
+        <!-- ############# FIM DO RODAPÉ ############# -->
+
     </div>
-    <!-- div wrapper -->
+    <!-- div container -->
+</div>
+<!-- div wrapper -->
 
 
 </body>

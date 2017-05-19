@@ -11,9 +11,7 @@
 		<div class="container-fluid">
 
 			<!--############# Linha Cabeçalho #############-->
-			<div class="row titulo">
-				<h1>Gestor Acadêmico</h1>
-			</div>
+				<%@include file="includes/cabecalho.jsp"%>
 			<!-- ############# FIM do Cabeçalho #############-->
 
 			<!-- ############# Linha principal ############# -->
@@ -34,7 +32,7 @@
 				</div>
 				<!-- conteudo -->
 				<!-- ############# FIM do conteudo ############# -->
-				
+
 				<!-- ############# INÍCIO DO RODAPÉ ############# -->
 				<%@ include file="includes/rodape.jsp"%>
 				<!-- ############# FIM DO RODAPÉ ############# -->

@@ -12,7 +12,7 @@
 		<div class="container-fluid">
 
 			<!--############# Linha Cabeçalho #############-->
-			<%@include file="includes/professor/professor_cabecalho.jsp"%>
+			<%@include file="includes/cabecalho.jsp"%>
 			<!-- ############# FIM do Cabeçalho #############-->
 
 			<!-- ############# Linha principal ############# -->
