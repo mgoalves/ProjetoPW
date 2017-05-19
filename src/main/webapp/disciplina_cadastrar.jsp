@@ -3,6 +3,14 @@
 <html lang="pt-br">
 <head>
 	<%@include file="includes/head.jsp"%>
+
+	<!--############# Para rolar para o formulario #############-->
+	<script type="text/javascript">
+		$(document).ready(function() { 
+			window.location.href='#conteudo';
+		});
+	</script>
+
 </head>
 
 <body>
@@ -61,6 +69,13 @@
 										<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
 											<input type="text" class="form-control" id="cadastrarDuracao"
 											placeholder="Carga Horária">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label"></label>
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+											<button class="col-lg-3 col-md-4 col-sm-6 col-xs-12 btn btn-primary" type="submit">Salvar</button>
 										</div>
 									</div>
 
