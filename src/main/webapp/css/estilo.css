@@ -1,4 +1,4 @@
-/***** TITULO ***********/
+/***** TITULO LOGO***********/
 .titulo {
     background-color: #1F4D70;
 }
@@ -9,6 +9,7 @@
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
 .img-logo-mobile img{
     margin: auto;
     width: 320px;
@@ -21,41 +22,37 @@
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
 .img-logo img{
     margin: auto;
     width: 100%;
 }
-/*
-.titulo h1 {
-    text-align: center;
-    color: #fff;
-    font-weight: 600;
-    }*/
-    /***********************************/
 
-    .margem-top-15px{
-        margin-top: 15px; 
-    }
+/***********************************/
 
-    .botoes {
-        margin-left: -15px;
-    }
+.margem-top-15px{
+    margin-top: 15px; 
+}
 
-    .botoes a{
-        color: rgba(255, 255, 255, 1.0);
-        text-transform: uppercase;
-        font-size: 12pt;
-        font-weight: 700;
-        margin-bottom: 15px;
-        margin-right: 15px;
-    }
-    .botao-buscar-mobile{
-     /* margin-left: 15px;*/
-     width: auto;
+.botoes {
+    margin-left: -15px;
+}
 
- }
+.botoes a{
+    color: rgba(255, 255, 255, 1.0);
+    text-transform: uppercase;
+    font-size: 12pt;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+.botao-buscar-mobile{
+ /* margin-left: 15px;*/
+ width: auto;
 
- .pesquisar input{
+}
+
+.pesquisar input{
     margin-bottom: 15px;
 }
 
@@ -88,7 +85,7 @@
 .menu-lateral-mobile li a:hover{
     transition: .2s;
     background: rgba(2, 117, 216, 0);
-    -webkit-transform: scale(1.2);
+    -webkit-transform: scale(1.05);
     border-radius: 5px;
     background: rgba(2, 117, 216, 0.3);
 }
