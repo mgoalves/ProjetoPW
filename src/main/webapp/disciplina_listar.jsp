@@ -50,36 +50,36 @@
                                     <td>10</td>
                                     <td>Língua Portuguesa</td>
                                     <td>96</td>
-                                    <td><a href="#">Editar</a></td>
-                                    <td><a href="#">Excluir</a></td>
+                                    <td><a href="disciplina_editar.jsp">Editar</a></td>
+                                    <td><a href="disciplina_excluir.jsp">Excluir</a></td>
                                 </tr>
                                 <tr>
                                     <td>20</td>
                                     <td>Matemática</td>
                                     <td>96</td>
-                                    <td><a href="#">Editar</a></td>
-                                    <td><a href="#">Excluir</a></td>
+                                    <td><a href="disciplina_editar.jsp">Editar</a></td>
+                                    <td><a href="disciplina_excluir.jsp">Excluir</a></td>
                                 </tr>
                                 <tr>
                                     <td>30</td>
                                     <td>Geografia Política</td>
                                     <td>60</td>
-                                    <td><a href="#">Editar</a></td>
-                                    <td><a href="#">Excluir</a></td>
+                                    <td><a href="disciplina_editar.jsp">Editar</a></td>
+                                    <td><a href="disciplina_excluir.jsp">Excluir</a></td>
                                 </tr>
                                 <tr>
                                     <td>40</td>
                                     <td>Inglês Técnico</td>
                                     <td>60</td>
-                                    <td><a href="#">Editar</a></td>
-                                    <td><a href="#">Excluir</a></td>
+                                    <td><a href="disciplina_editar.jsp">Editar</a></td>
+                                    <td><a href="disciplina_excluir.jsp">Excluir</a></td>
                                 </tr>
                                 <tr>
                                     <td>50</td>
                                     <td>Algorítimos</td>
                                     <td>100</td>
-                                    <td><a href="#">Editar</a></td>
-                                    <td><a href="#">Excluir</a></td>
+                                    <td><a href="disciplina_editar.jsp">Editar</a></td>
+                                    <td><a href="disciplina_excluir.jsp">Excluir</a></td>
                                 </tr>    
                             </table>
 

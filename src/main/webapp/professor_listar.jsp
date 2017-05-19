@@ -54,24 +54,24 @@
                                         <td>Professor 01</td>
                                         <td>(62)44444-4444</td>
                                         <td>professor01@nossaescola.com</td>
-                                        <td><a href="#">Editar</a></td>
-                                        <td><a href="#">Excluir</a></td>
+                                        <td><a href="professor_editar.jsp">Editar</a></td>
+                                        <td><a href="professor_excluir.jsp">Excluir</a></td>
                                     </tr>
                                     <tr>
                                         <td>20</td>
                                         <td>Professor 02</td>
                                         <td>(62)33333-3333</td>
                                         <td>professor02@nossaescola.com</td>
-                                        <td><a href="#">Editar</a></td>
-                                        <td><a href="#">Excluir</a></td>
+                                        <td><a href="professor_editar.jsp">Editar</a></td>
+                                        <td><a href="professor_excluir.jsp">Excluir</a></td>
                                     </tr>
                                     <tr>
                                         <td>30</td>
                                         <td>Professor 03</td>
                                         <td>(62)99999-9999</td>
                                         <td>professor03@nossaescola.com</td>
-                                        <td><a href="#">Editar</a></td>
-                                        <td><a href="#">Excluir</a></td>
+                                        <td><a href="professor_editar.jsp">Editar</a></td>
+                                        <td><a href="professor_excluir.jsp">Excluir</a></td>
                                     </tr>    
                                 </table>
                            

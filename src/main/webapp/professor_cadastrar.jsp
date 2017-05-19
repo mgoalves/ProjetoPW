@@ -77,7 +77,7 @@
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">RG</label>
 										<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
 											<input type="text" class="form-control" id="cadastrarRG"
-											placeholder="RG">
+											placeholder="00.000.000-0">
 										</div>
 									</div>
 
@@ -85,7 +85,7 @@
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">CPF</label>
 										<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
 											<input type="text" class="form-control" id="cadastrarCPF"
-											placeholder="CPF">
+											placeholder="000.000.000-00" name="cpf" maxlength="14">
 										</div>
 									</div>
 
@@ -122,6 +122,14 @@
 									</div>
 
 									<div class="form-group">
+										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="cadastrarCCEP">CEP</label>
+										<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+											<input type="text" class="form-control" id="cadastrarCCEP"
+											placeholder="00.000-000" name="cep" maxlength="10">
+										</div>
+									</div>
+
+									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Bairro</label>
 										<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
 											<input type="text" class="form-control" id="cadastrarBairro"
@@ -139,8 +147,8 @@
 
 
 									<div class="form-group">
-										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Número</label>
-										<div class="col-lg-1 col-md-3 col-sm-6 col-xs-12">
+										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="cadastrarNumero">Número</label>
+										<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
 											<input type="number" class="form-control" id="cadastrarNumero"
 											placeholder="Número">
 										</div>
