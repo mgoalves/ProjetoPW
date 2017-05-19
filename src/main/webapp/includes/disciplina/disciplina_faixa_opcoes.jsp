@@ -30,7 +30,7 @@
         <a class="col-lg-2 col-md-3 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
         href="disciplina_excluir.jsp" role="button"><span class="glyphicon glyphicon-remove"></span> Excluir</a>
         <a class="col-lg-2 col-md-3 col-sm-4 col-xs-12 btn btn-default btn-lg btn btn-primary"
-        href="disciplina_historico.jsp" role="button"><span class="glyphicon glyphicon-list"></span> Listar</a>
+        href="disciplina_listar.jsp" role="button"><span class="glyphicon glyphicon-list"></span> Listar</a>
     </div>
 </div>
 <!-- Botões de opções -->
