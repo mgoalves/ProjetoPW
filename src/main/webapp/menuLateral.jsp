@@ -18,10 +18,10 @@
 				<li><a href="index.jsp"> <!-- Esse menu so parece para celular -->
 						<div class="figure_32 hidden-lg hidden-md hidden-sm">
 							<img src="img/icones_menu_32/home_32px.png"
-								alt="Menu Bot�o Home"> <span>home</span>
+								alt="Menu Botão Home"> <span>home</span>
 						</div> <!-- Esse menu so parece para tablet, notebook e desktop -->
 						<figure class="figure_115 hidden-xs">
-							<img src="img/icones_menu/home.jpg" alt="Menu Bot�o Home">
+							<img src="img/icones_menu/home.jpg" alt="Menu Botão Home">
 							<figcaption>home</figcaption>
 						</figure>
 				</a></li>
@@ -31,10 +31,10 @@
 				<li><a href="alunos.jsp"> <!-- Esse menu so parece para celular -->
 						<div class="figure_32 hidden-lg hidden-md hidden-sm">
 							<img src="img/icones_menu_32/aluno_32px.png"
-								alt="Menu Bot�o Alunos"> <span>alunos</span>
+								alt="Menu Botão Alunos"> <span>alunos</span>
 						</div> <!-- Esse menu so parece para tablet, notebook e desktop -->
 						<figure class="figure_115 hidden-xs">
-							<img src="img/icones_menu/aluno.jpg" alt="Menu Bot�o Alunos">
+							<img src="img/icones_menu/aluno.jpg" alt="Menu Botão Alunos">
 							<figcaption>alunos</figcaption>
 						</figure>
 				</a></li>
@@ -44,11 +44,11 @@
 				<li><a href="professores.jsp"> <!-- Esse menu so parece para celular -->
 						<div class="figure_32 hidden-lg hidden-md hidden-sm">
 							<img src="img/icones_menu_32/professor_32px.png"
-								alt="Menu Bot�o Professores"> <span>professores</span>
+								alt="Menu Botão Professores"> <span>professores</span>
 						</div> <!-- Esse menu so parece para tablet, notebook e desktop -->
 						<figure class="figure_115 hidden-xs">
 							<img src="img/icones_menu/professor.jpg"
-								alt="Menu Bot�o Professores">
+								alt="Menu Botão Professores">
 							<figcaption>professores</figcaption>
 						</figure>
 				</a></li>
@@ -58,11 +58,11 @@
 				<li><a href="disciplinas.jsp"> <!-- Esse menu so parece para celular -->
 						<div class="figure_32 hidden-lg hidden-md hidden-sm">
 							<img src="img/icones_menu_32/disciplina_32px.png"
-								alt="Menu Bot�o Disciplina"> <span>disciplina</span>
+								alt="Menu Botão Disciplina"> <span>disciplina</span>
 						</div> <!-- Esse menu so parece para tablet, notebook e desktop -->
 						<figure class="figure_115 hidden-xs">
 							<img src="img/icones_menu/disciplina.jpg"
-								alt="Menu Bot�o Disciplina">
+								alt="Menu Botão Disciplina">
 							<figcaption>disciplina</figcaption>
 						</figure>
 				</a></li>
