@@ -1,31 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8"%><!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>Gestor Acadêmico</title>
-
-<!-- Favicon -->
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-
-<!-- Bootstrap -->
-<link href="css/bootstrap.css" rel="stylesheet">
-
-<!-- Meu estilo -->
-<link rel="stylesheet" href="css/estilo.css">
-
-<!-- Fontes a serem utilizadas -->
-<link
-	href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,500,900|Source+Sans+Pro:700"
-	rel="stylesheet">
-
-<!-- Javascript e jQuery -->
-<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
-<script src='js/bootstrap.min.js' type="text/javascript"></script>
-
+	<%@include file="includes/head.jsp"%>
 </head>
 
 <body>
@@ -35,7 +11,7 @@
 		<div class="container-fluid">
 
 			<!--############# Linha Cabeçalho #############-->
-            <%@include file="includes/professor/professor_cabecalho.jsp"%>
+			<%@include file="includes/professor/professor_cabecalho.jsp"%>
 			<!-- ############# FIM do Cabeçalho #############-->
 
 			<!-- ############# Linha principal ############# -->
@@ -48,8 +24,8 @@
 				<!--############# MENU LATERAL #############-->
 
 				<!--############# FAIXA DE OPÇÕES #############-->
-                <%@ include file="includes/professor/professor_faixa_opcoes.jsp"%>
-                <!--############# FAIXA DE OPÇÕES #############-->
+				<%@ include file="includes/professor/professor_faixa_opcoes.jsp"%>
+				<!--############# FAIXA DE OPÇÕES #############-->
 
 				<!-- ############# Conteudo ############# -->
 				<div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
@@ -58,7 +34,7 @@
 					<div class="conteudo">
 
 						<h3>Professor</h3>
-			
+						
 
 					</div>
 					<!-- FIM Div Conteudo -->
