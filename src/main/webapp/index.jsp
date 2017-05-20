@@ -25,7 +25,12 @@
 
 				<!-- ############# Conteudo ############# -->
 				<div id="conteudo" class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
-					<h1>Bem vindo!</h1>
+
+					<div class="jumbotron painel-index">
+						<h1>Bem Vindo!<br/>Gestor Acadêminco</h1>
+						<p></p>
+					</div>
+
 				</div>
 				<!-- conteudo -->
 				<!-- ############# FIM do conteudo ############# -->
