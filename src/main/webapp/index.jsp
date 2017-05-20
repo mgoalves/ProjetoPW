@@ -23,7 +23,7 @@
 				</div>
 				<!-- Menu Lateral -->
 
-				<div id="espaco esquerdo" class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+				<div id="espaco-esquerdo" class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
 				</div>
 
 				<!-- ############# Conteudo ############# -->
