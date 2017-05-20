@@ -43,11 +43,11 @@
 
 					<!-- Div Conteudo -->
 					<div id="conteudo">
-					
+						
 						<hr/>
 						<div class="panel panel-default">
 							<div class="panel-heading titulo-painel">
-								<h2>Cadastro</h2>
+								<center><h2>Cadastro</h2></center>
 							</div>
 							<div class="panel-body">
 

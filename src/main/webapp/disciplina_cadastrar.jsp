@@ -32,18 +32,20 @@
 				</div>
 				<!-- Menu Lateral -->
 
-				<!--############# FAIXA DE OPÇÕES #############-->
-				<%@include file="includes/disciplina/disciplina_faixa_opcoes.jsp"%>
-				<!--############# FAIXA DE OPÇÕES #############-->
-
 				<!-- ############# Conteudo ############# -->
 				<div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
+
+					<!--############# TÍTULO PÁGINA #############-->
+					<%@include file="includes/disciplina/disciplina-titulo-pagina.jsp"%>
+					<!--############# FIM TÍTULO PÁGINA #############-->
 
 					<!-- Div Conteudo -->
 					<div id="conteudo">
 						<hr/>
 						<div class="panel panel-default">
-							<div class="panel-heading">Cadastro de Disciplina</div>
+							<div class="panel-heading titulo-painel">
+								<center><h2>Cadastro</h2></center>
+							</div>
 							<div class="panel-body">
 
 								<form class="form-horizontal">

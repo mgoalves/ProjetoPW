@@ -49,8 +49,8 @@
     margin-right: 15px;
 }
 .botao-buscar-mobile{
-   /* margin-left: 15px;*/
-   width: auto;
+ /* margin-left: 15px;*/
+ width: auto;
 
 }
 
@@ -132,9 +132,9 @@
 }
 
 .figure_115 figcaption{
- text-transform: uppercase;
- text-align: center;
- font-weight: bolder;
+   text-transform: uppercase;
+   text-align: center;
+   font-weight: bolder;
 }
 /**********************************/
 
@@ -154,10 +154,10 @@
 }
 
 .figure_32 span{
- text-transform: uppercase;
- font-size:  14pt;
- font-weight: bolder;
- margin-left: 5px;
+   text-transform: uppercase;
+   font-size:  14pt;
+   font-weight: bolder;
+   margin-left: 5px;
 }
 /************************************/
 
@@ -177,16 +177,46 @@
 }
 
 .titulo-painel h2{
-   font-family: 'Open Sans', sans-serif;
-   text-transform: uppercase;
-   font-size: 14pt;
-   font-weight: 800;
-   color: #373F51;
-   line-height: 0pt;
-   
+ font-family: 'Open Sans', sans-serif;
+ text-transform: uppercase;
+ font-size: 14pt;
+ font-weight: 800;
+ color: #373F51;
+ line-height: 0pt;
+
 }
 /*************************************/
 
+/********** Formatação Links Editar e Excluir ***********/
+
+.editar-link a{
+   font-family: 'Open Sans', sans-serif;
+   color: #ff9800;
+   font-size: 11pt;
+   font-weight: 700;
+}
+
+.editar-link a:hover{
+   font-family: 'Open Sans', sans-serif;
+   color: #ffc107;
+   font-size: 11pt;
+   font-weight: 700;
+}
+
+.excluir-link a{
+   font-family: 'Open Sans', sans-serif;
+   color: #d50000;
+   font-size: 11pt;
+   font-weight: 700;
+}
+
+.excluir-link a:hover{
+   font-family: 'Open Sans', sans-serif;
+   color: #f44336;
+   font-size: 11pt;
+   font-weight: 700;
+}
+/*******************************************************/
 
 .sombra {
     box-shadow: 0px 0px 8px #333;
@@ -196,17 +226,17 @@
 
 /* Rodapé */
 .rodape {
-   background-color: #0275D8;
-   margin-top: 15px;
-   padding: 5px;
+ background-color: #0275D8;
+ margin-top: 15px;
+ padding: 5px;
 }
 
 .rodape p{
 
-   text-align: center;
-   font-size: 1.1em;
-   color: #fff;
-   font-weight: 400;
+ text-align: center;
+ font-size: 1.1em;
+ color: #fff;
+ font-weight: 400;
 }
 /********************/
 
