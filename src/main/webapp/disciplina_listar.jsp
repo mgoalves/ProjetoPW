@@ -34,12 +34,12 @@
 
 
                 <!--############# FAIXA DE OPÇÕES #############-->
-                <%@ include file="includes/professor/professor_faixa_opcoes_lista.jsp"%>
+                <%@ include file="includes/disciplina/disciplina_faixa_opcoes_listar.jsp"%>
                 <!--############# FAIXA DE OPÇÕES #############-->
 
                 <!-- Div Conteudo -->
                 <div class="conteudo">
-                    
+                    <br/><br/><br/>
                     <div class="panel panel-default">
                         <div class="panel-heading titulo-painel">
                             <h2><center>Lista de Disciplinas</center></h2>
@@ -48,6 +48,7 @@
 
                             <div class="table-responsive">
                                 <table class="table table-houve">
+                                <span class="menssagem"><h6 class="hidden-lg hidden-md hidden-sm">[Role a tabela lateralmente se necessário]<h6></span>
                                     <tr>
                                         <th>Código</th>
                                         <th>Nome</th>
