@@ -44,7 +44,6 @@
 					<!-- Div Conteudo -->
 					<div id="conteudo">
 						
-						<hr/>
 						<div class="panel panel-default">
 							<div class="panel-heading titulo-painel">
 								<center><h2>Cadastro</h2></center>
