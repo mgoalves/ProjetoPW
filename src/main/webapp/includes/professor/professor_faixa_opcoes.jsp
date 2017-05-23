@@ -1,20 +1,18 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
 
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pesquisaBotoes">
-    <!-- Pesquisar -->
-    <div class="row pesquisar">
-        <form>
-            <div class="form-group">
-                <div class="col-lg-9 col-md-8 col-sm-8 col-xs-10">
-                    <input type="text" class="form-control" id="pesquisar"
-                    placeholder="Nome ou Matrícula">
-                </div>
+ <!-- Pesquisar -->
+ <div class="row pesquisar">
+    <form>
+        <div class="form-group">
+            <div class="col-lg-9 col-md-8 col-sm-8 col-xs-8">
+                <input type="text" class="form-control" id="pesquisar" placeholder="Nome ou Matrícula">
             </div>
-            <button type="submit"
-            class="col-lg-2 col-md-3 col-sm-4 col-xs-1 hidden-xs btn btn-primary">Pesquisar <span class="glyphicon glyphicon-search"></span></button>
-            <button type="submit"
-            class="col-xs-1 hidden-lg hidden-md hidden-sm btn btn-primary botao-buscar-mobile">
-            <span class="glyphicon glyphicon-search"></span>
+        </div>
+        <button type="submit"
+        class="col-lg-2 col-md-3 col-sm-4 hidden-xs btn btn-primary">Pesquisar <span class="glyphicon glyphicon-search"></span></button>
+        <button type="submit" class="col-xs-2 hidden-lg hidden-md hidden-sm btn btn-primary botao-buscar-mobile">
+            <span class="glyphicon glyphicon-search"></span> buscar
         </button>
     </form>
 </div>

@@ -48,7 +48,7 @@
 
                             <div class="table-responsive">
                                 <table class="table table-houve">
-                                <span class="menssagem"><h6 class="hidden-lg hidden-md hidden-sm">[Role a tabela lateralmente se necessário]<h6></span>
+                                <center><h6 class="hidden-lg hidden-md hidden-sm">[Role a tabela lateralmente se necessário]<h6></center>
                                     <tr>
                                         <th>Código</th>
                                         <th>Nome</th>

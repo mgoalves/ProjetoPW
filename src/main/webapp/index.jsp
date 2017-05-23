@@ -27,53 +27,102 @@
 				</div>
 
 				<!-- ############# Conteudo ############# -->
-				<div id="conteudo" class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
+				<div id="conteudo" class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
+
+					<div class="container">
+						
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+
+								<div class="item active">
+									<img src="img/slide/1.jpg" alt="Gerencie alunos" style="width:100%;">
+									<div class="carousel-caption">
+										<h3>Alunos</h3>
+										<p>Controle acadêmico para alunos</p>
+									</div>
+								</div>
+
+								<div class="item">
+									<img src="img/slide/2.jpg" alt="Chicago" style="width:100%;">
+									<div class="carousel-caption">
+										<h3>Professores</h3>
+										<p>Controle acadêmico para Professores</p>
+									</div>
+								</div>
+
+								<div class="item">
+									<img src="img/slide/3.jpg" alt="New York" style="width:100%;">
+									<div class="carousel-caption">
+										<h3>Disciplinas</h3>
+										<p>Controle acadêmico para Disciplinas</p>
+									</div>
+								</div>
+
+							</div>
+
+							<!-- Left and right controls -->
+							<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#myCarousel" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
 
 					<div class="jumbotron painel-index">
-						<h1>Bem Vindo!<br/> Gestor Acadêmico <span class="glyphicon glyphicon-education"></h1>
-						<p>
-							Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes. Se você pretende usar uma passagem de Lorem Ipsum, precisa ter certeza de que não há algo embaraçoso escrito escondido no meio do texto. Todos os geradores de Lorem Ipsum na internet tendem a repetir pedaços predefinidos conforme necessário, fazendo deste o primeiro gerador de Lorem Ipsum autêntico da internet. Ele usa um dicionário com mais de 200 palavras em Latim combinado com um punhado de modelos de estrutura de frases para gerar um Lorem Ipsum com aparência razoável, livre de repetições, inserções de humor, palavras não características, etc.
+
+						<h3><b>O que é um software gestão escolar?<b></h3>
+						<p>O conceito de gestão escolar nos remete ao gerenciamento e administração de uma determinada instituição de maneira eficiente. O objetivo da gestão escolar, portanto, é organizar todas as áreas, aspectos e determinantes para que o processo fim (a educação) ocorra de maneira eficaz, garantindo seu objetivo principal, que é a aprendizagem efetiva por parte dos alunos.
 						</p>
 						<p>
-							Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes. Se você pretende usar uma passagem de Lorem Ipsum, precisa ter certeza de que não há algo embaraçoso escrito escondido no meio do texto. Todos os geradores de Lorem Ipsum na internet tendem a repetir pedaços predefinidos conforme necessário, fazendo deste o primeiro gerador de Lorem Ipsum autêntico da internet. Ele usa um dicionário com mais de 200 palavras em Latim combinado com um punhado de modelos de estrutura de frases para gerar um Lorem Ipsum com aparência razoável, livre de repetições, inserções de humor, palavras não características, etc.
+							Atualmente, diante de tantas possibilidades digitais e do avanço tecnológico, os softwares de gestão escolar estão em pauta. A automatização garante uma integração de todos os fatores do processo educacional (tanto a atividade fim como as atividades à sua volta) garantindo, assim, uma gestão eficiente.
+						</p>
+
+
+						<h3><b>O que é um software gestão escolar?<b></h3>
+						<p>O conceito de gestão escolar nos remete ao gerenciamento e administração de uma determinada instituição de maneira eficiente. O objetivo da gestão escolar, portanto, é organizar todas as áreas, aspectos e determinantes para que o processo fim (a educação) ocorra de maneira eficaz, garantindo seu objetivo principal, que é a aprendizagem efetiva por parte dos alunos.
 						</p>
 						<p>
-							Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes. Se você pretende usar uma passagem de Lorem Ipsum, precisa ter certeza de que não há algo embaraçoso escrito escondido no meio do texto. Todos os geradores de Lorem Ipsum na internet tendem a repetir pedaços predefinidos conforme necessário, fazendo deste o primeiro gerador de Lorem Ipsum autêntico da internet. Ele usa um dicionário com mais de 200 palavras em Latim combinado com um punhado de modelos de estrutura de frases para gerar um Lorem Ipsum com aparência razoável, livre de repetições, inserções de humor, palavras não características, etc.
+							Atualmente, diante de tantas possibilidades digitais e do avanço tecnológico, os softwares de gestão escolar estão em pauta. A automatização garante uma integração de todos os fatores do processo educacional (tanto a atividade fim como as atividades à sua volta) garantindo, assim, uma gestão eficiente.
+						</p>
+
+
+						<h3><b>O que é um software gestão escolar?<b></h3>
+						<p>O conceito de gestão escolar nos remete ao gerenciamento e administração de uma determinada instituição de maneira eficiente. O objetivo da gestão escolar, portanto, é organizar todas as áreas, aspectos e determinantes para que o processo fim (a educação) ocorra de maneira eficaz, garantindo seu objetivo principal, que é a aprendizagem efetiva por parte dos alunos.
 						</p>
 						<p>
-							Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes. Se você pretende usar uma passagem de Lorem Ipsum, precisa ter certeza de que não há algo embaraçoso escrito escondido no meio do texto. Todos os geradores de Lorem Ipsum na internet tendem a repetir pedaços predefinidos conforme necessário, fazendo deste o primeiro gerador de Lorem Ipsum autêntico da internet. Ele usa um dicionário com mais de 200 palavras em Latim combinado com um punhado de modelos de estrutura de frases para gerar um Lorem Ipsum com aparência razoável, livre de repetições, inserções de humor, palavras não características, etc.
-						</p>
-						<p>
-							Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes. Se você pretende usar uma passagem de Lorem Ipsum, precisa ter certeza de que não há algo embaraçoso escrito escondido no meio do texto. Todos os geradores de Lorem Ipsum na internet tendem a repetir pedaços predefinidos conforme necessário, fazendo deste o primeiro gerador de Lorem Ipsum autêntico da internet. Ele usa um dicionário com mais de 200 palavras em Latim combinado com um punhado de modelos de estrutura de frases para gerar um Lorem Ipsum com aparência razoável, livre de repetições, inserções de humor, palavras não características, etc.
-						</p>
-						<p>
-							Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes. Se você pretende usar uma passagem de Lorem Ipsum, precisa ter certeza de que não há algo embaraçoso escrito escondido no meio do texto. Todos os geradores de Lorem Ipsum na internet tendem a repetir pedaços predefinidos conforme necessário, fazendo deste o primeiro gerador de Lorem Ipsum autêntico da internet. Ele usa um dicionário com mais de 200 palavras em Latim combinado com um punhado de modelos de estrutura de frases para gerar um Lorem Ipsum com aparência razoável, livre de repetições, inserções de humor, palavras não características, etc.
-						</p>
-						<p>
-							Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes. Se você pretende usar uma passagem de Lorem Ipsum, precisa ter certeza de que não há algo embaraçoso escrito escondido no meio do texto. Todos os geradores de Lorem Ipsum na internet tendem a repetir pedaços predefinidos conforme necessário, fazendo deste o primeiro gerador de Lorem Ipsum autêntico da internet. Ele usa um dicionário com mais de 200 palavras em Latim combinado com um punhado de modelos de estrutura de frases para gerar um Lorem Ipsum com aparência razoável, livre de repetições, inserções de humor, palavras não características, etc.
-						</p>
-						<p>
-							Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes. Se você pretende usar uma passagem de Lorem Ipsum, precisa ter certeza de que não há algo embaraçoso escrito escondido no meio do texto. Todos os geradores de Lorem Ipsum na internet tendem a repetir pedaços predefinidos conforme necessário, fazendo deste o primeiro gerador de Lorem Ipsum autêntico da internet. Ele usa um dicionário com mais de 200 palavras em Latim combinado com um punhado de modelos de estrutura de frases para gerar um Lorem Ipsum com aparência razoável, livre de repetições, inserções de humor, palavras não características, etc.
+							Atualmente, diante de tantas possibilidades digitais e do avanço tecnológico, os softwares de gestão escolar estão em pauta. A automatização garante uma integração de todos os fatores do processo educacional (tanto a atividade fim como as atividades à sua volta) garantindo, assim, uma gestão eficiente.
 						</p>
 					</div>
 
-				</div>
-				<!-- conteudo -->
-				<!-- ############# FIM do conteudo ############# -->
 
-				<!-- ############# INÍCIO DO RODAPÉ ############# -->
-				<%@ include file="includes/rodape.jsp"%>
-				<!-- ############# FIM DO RODAPÉ ############# -->
+					<!-- conteudo -->
+					<!-- ############# FIM do conteudo ############# -->
 
-			</div><!-- Linha principal -->
-			<!-- ############# FIM da Linha principal ############# -->
+					<!-- ############# INÍCIO DO RODAPÉ ############# -->
+					<%@ include file="includes/rodape.jsp"%>
+					<!-- ############# FIM DO RODAPÉ ############# -->
+
+				</div><!-- Linha principal -->
+				<!-- ############# FIM da Linha principal ############# -->
 
 
+			</div>
+			<!-- div container -->
 		</div>
-		<!-- div container -->
-	</div>
-	<!-- div wrapper -->
+		<!-- div wrapper -->
 
 
-</body>
-</html>
+	</body>
+	</html>
