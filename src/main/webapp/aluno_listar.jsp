@@ -44,7 +44,7 @@
 						<div class="panel panel-default">
 							<div class="panel-heading"> 
 								<div class="panel-heading titulo-painel">
-									<h2><center>Histórico de alunos</center></h2>
+									<h2><center>Lista de alunos</center></h2>
 								</div>
 							</div>
 							<div class="panel-body">
@@ -69,8 +69,8 @@
 											<td>31.844.428-8</td>
 											<td>Goiânia</td>
 											<!-- opções para Editar ou excluir -->
-											<td class="editar-link"><a href="professor_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
-											<td class="excluir-link"><a href="professor_excluir.jsp"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
+											<td class="editar-link"><a href="aluno_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
+											<td class="excluir-link"><a href="#"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
 										</tr>
 										<tr>
 										<td>002</td>
@@ -80,8 +80,8 @@
 											<td>15.497.644-1</td>
 											<td>Goiânia</td>
 											<!-- opções para Editar ou excluir -->
-											<td class="editar-link"><a href="professor_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
-											<td class="excluir-link"><a href="professor_excluir.jsp"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
+											<td class="editar-link"><a href="aluno_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
+											<td class="excluir-link"><a href="#"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
 										</tr>
 										<tr>
 											<td>003</td>
@@ -91,8 +91,8 @@
 											<td>27.205.774-5</td>
 											<td>Goiânia</td>
 											<!-- opções para Editar ou excluir -->
-											<td class="editar-link"><a href="professor_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
-											<td class="excluir-link"><a href="professor_excluir.jsp"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
+											<td class="editar-link"><a href="aluno_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
+											<td class="excluir-link"><a href="#"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
 										</tr>
 									</table>
 								</div><!-- Tabela Responsiva -->

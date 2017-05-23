@@ -1,10 +1,10 @@
-@media ( max-width: 600px ) {
+@media ( max-width: 60000px ) {
     #menu-lateral{
         position: relative;
     }
 }
 
-@media ( min-width: 600px ) {
+@media ( min-width: 60000px ) {
     #menu-lateral{
         position: fixed;
         z-index: 99;

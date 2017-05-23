@@ -62,7 +62,7 @@
                                     <td>(62)44444-4444</td>
                                     <td>professor01@nossaescola.com</td>
                                     <td class="editar-link"><a href="professor_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
-                                    <td class="excluir-link"><a href="professor_excluir.jsp"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
+                                    <td class="excluir-link"><a href="#"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
                                 </tr>
                                 <tr>
                                     <td>20</td>
@@ -70,7 +70,7 @@
                                     <td>(62)33333-3333</td>
                                     <td>professor02@nossaescola.com</td>
                                     <td class="editar-link"><a href="professor_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
-                                    <td class="excluir-link"><a href="professor_excluir.jsp"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
+                                    <td class="excluir-link"><a href="#"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
                                 </tr>
                                 <tr>
                                     <td>30</td>
@@ -78,7 +78,7 @@
                                     <td>(62)99999-9999</td>
                                     <td>professor03@nossaescola.com</td>
                                     <td class="editar-link"><a href="professor_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
-                                    <td class="excluir-link"><a href="professor_excluir.jsp"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
+                                    <td class="excluir-link"><a href="#"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
                                 </tr>    
                             </table>
                         </div><!-- Tabela Responsiva -->

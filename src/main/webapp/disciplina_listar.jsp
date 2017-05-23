@@ -60,35 +60,35 @@
                                         <td>Língua Portuguesa</td>
                                         <td>96</td>
                                         <td class="editar-link"><a href="disciplina_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
-                                        <td class="excluir-link"><a href="disciplina_excluir.jsp"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
+                                        <td class="excluir-link"><a href="#"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
                                     </tr>
                                     <tr>
                                         <td>20</td>
                                         <td>Matemática</td>
                                         <td>96</td>
                                         <td class="editar-link"><a href="disciplina_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
-                                        <td class="excluir-link"><a href="disciplina_excluir.jsp"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
+                                        <td class="excluir-link"><a href="#"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
                                     </tr>
                                     <tr>
                                         <td>30</td>
                                         <td>Geografia Política</td>
                                         <td>60</td>
                                         <td class="editar-link"><a href="disciplina_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
-                                        <td class="excluir-link"><a href="disciplina_excluir.jsp"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
+                                        <td class="excluir-link"><a href="#"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
                                     </tr>
                                     <tr>
                                         <td>40</td>
                                         <td>Inglês Técnico</td>
                                         <td>60</td>
                                         <td class="editar-link"><a href="disciplina_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
-                                        <td class="excluir-link"><a href="disciplina_excluir.jsp"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
+                                        <td class="excluir-link"><a href="#"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
                                     </tr>
                                     <tr>
                                         <td>50</td>
                                         <td>Algorítimos</td>
                                         <td>100</td>
                                         <td class="editar-link"><a href="disciplina_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
-                                        <td class="excluir-link"><a href="disciplina_excluir.jsp"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
+                                        <td class="excluir-link"><a href="#"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
                                     </tr>    
                                 </table>
                             </div><!-- Tabela Responsiva -->
