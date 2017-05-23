@@ -27,10 +27,10 @@
 				</div>
 
 				<!-- ############# Conteudo ############# -->
-				<div id="conteudo" class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
+				<div id="conteudo" class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
 
-					<div class="container">
-						
+					<div class="jumbotron painel-index">
+
 						<div id="myCarousel" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
@@ -44,7 +44,7 @@
 
 								<div class="item active">
 									<img src="img/slide/1.jpg" alt="Gerencie alunos" style="width:100%;">
-									<div class="carousel-caption">
+									<div class="carousel-caption hidden-xs">
 										<h3>Alunos</h3>
 										<p>Controle acadêmico para alunos</p>
 									</div>
@@ -52,7 +52,7 @@
 
 								<div class="item">
 									<img src="img/slide/2.jpg" alt="Chicago" style="width:100%;">
-									<div class="carousel-caption">
+									<div class="carousel-caption hidden-xs">
 										<h3>Professores</h3>
 										<p>Controle acadêmico para Professores</p>
 									</div>
@@ -60,7 +60,7 @@
 
 								<div class="item">
 									<img src="img/slide/3.jpg" alt="New York" style="width:100%;">
-									<div class="carousel-caption">
+									<div class="carousel-caption hidden-xs">
 										<h3>Disciplinas</h3>
 										<p>Controle acadêmico para Disciplinas</p>
 									</div>
@@ -78,45 +78,26 @@
 								<span class="sr-only">Next</span>
 							</a>
 						</div>
+
+
+						<h3><b>O que é um software gestão escolar?<b></h3>
+						<p>O conceito de gestão escolar nos remete ao gerenciamento e administração de uma determinada instituição de maneira eficiente. O objetivo da gestão escolar, portanto, é organizar todas as áreas, aspectos e determinantes para que o processo fim (a educação) ocorra de maneira eficaz, garantindo seu objetivo principal, que é a aprendizagem efetiva por parte dos alunos.
+						</p>
+						<p>
+							Atualmente, diante de tantas possibilidades digitais e do avanço tecnológico, os softwares de gestão escolar estão em pauta. A automatização garante uma integração de todos os fatores do processo educacional (tanto a atividade fim como as atividades à sua volta) garantindo, assim, uma gestão eficiente.
+						</p>
+
 					</div>
 
-					<div class="jumbotron painel-index">
-
-						<h3><b>O que é um software gestão escolar?<b></h3>
-						<p>O conceito de gestão escolar nos remete ao gerenciamento e administração de uma determinada instituição de maneira eficiente. O objetivo da gestão escolar, portanto, é organizar todas as áreas, aspectos e determinantes para que o processo fim (a educação) ocorra de maneira eficaz, garantindo seu objetivo principal, que é a aprendizagem efetiva por parte dos alunos.
-						</p>
-						<p>
-							Atualmente, diante de tantas possibilidades digitais e do avanço tecnológico, os softwares de gestão escolar estão em pauta. A automatização garante uma integração de todos os fatores do processo educacional (tanto a atividade fim como as atividades à sua volta) garantindo, assim, uma gestão eficiente.
-						</p>
-
-
-						<h3><b>O que é um software gestão escolar?<b></h3>
-						<p>O conceito de gestão escolar nos remete ao gerenciamento e administração de uma determinada instituição de maneira eficiente. O objetivo da gestão escolar, portanto, é organizar todas as áreas, aspectos e determinantes para que o processo fim (a educação) ocorra de maneira eficaz, garantindo seu objetivo principal, que é a aprendizagem efetiva por parte dos alunos.
-						</p>
-						<p>
-							Atualmente, diante de tantas possibilidades digitais e do avanço tecnológico, os softwares de gestão escolar estão em pauta. A automatização garante uma integração de todos os fatores do processo educacional (tanto a atividade fim como as atividades à sua volta) garantindo, assim, uma gestão eficiente.
-						</p>
-
-
-						<h3><b>O que é um software gestão escolar?<b></h3>
-						<p>O conceito de gestão escolar nos remete ao gerenciamento e administração de uma determinada instituição de maneira eficiente. O objetivo da gestão escolar, portanto, é organizar todas as áreas, aspectos e determinantes para que o processo fim (a educação) ocorra de maneira eficaz, garantindo seu objetivo principal, que é a aprendizagem efetiva por parte dos alunos.
-						</p>
-						<p>
-							Atualmente, diante de tantas possibilidades digitais e do avanço tecnológico, os softwares de gestão escolar estão em pauta. A automatização garante uma integração de todos os fatores do processo educacional (tanto a atividade fim como as atividades à sua volta) garantindo, assim, uma gestão eficiente.
-						</p>
-					</div>
-
-
-					<!-- conteudo -->
-					<!-- ############# FIM do conteudo ############# -->
-
-					<!-- ############# INÍCIO DO RODAPÉ ############# -->
-					<%@ include file="includes/rodape.jsp"%>
-					<!-- ############# FIM DO RODAPÉ ############# -->
-
+				</div><!-- conteudo -->
+					<!-- ############# FIM do conteudo ############# --
+					
 				</div><!-- Linha principal -->
 				<!-- ############# FIM da Linha principal ############# -->
 
+				<!-- ############# INÍCIO DO RODAPÉ ############# -->
+				<%@ include file="includes/rodape.jsp"%>
+				<!-- ############# FIM DO RODAPÉ ############# -->
 
 			</div>
 			<!-- div container -->
