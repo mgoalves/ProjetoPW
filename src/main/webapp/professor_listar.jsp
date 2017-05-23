@@ -11,21 +11,21 @@
 
 		<div class="container-fluid">
 
-           <!--############# Linha Cabeçalho #############-->
-           <%@include file="includes/cabecalho.jsp"%>
-           <!-- ############# FIM do Cabeçalho #############-->
+         <!--############# Linha Cabeçalho #############-->
+         <%@include file="includes/cabecalho.jsp"%>
+         <!-- ############# FIM do Cabeçalho #############-->
 
-           <!-- ############# Linha principal ############# -->
-           <div class="row margem-top-15px">
+         <!-- ############# Linha principal ############# -->
+         <div class="row margem-top-15px">
 
             <!-- Menu Lateral -->
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 menu-lateral">
-             <%@include file="menuLateral.jsp"%>
-         </div>
-         <!-- Menu Lateral -->
+               <%@include file="menuLateral.jsp"%>
+           </div>
+           <!-- Menu Lateral -->
 
-         <!-- ############# Conteudo ############# -->
-         <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
+           <!-- ############# Conteudo ############# -->
+           <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
 
             <!--############# TÍTULO PÁGINA #############-->
             <%@include file="includes/professor/professor-titulo-pagina.jsp"%>
@@ -38,6 +38,10 @@
             <!-- Div Conteudo -->
             <div class="conteudo">
 
+                <!--############# MODAL CONFIRMAÇÃO DE EXCLUSÃO #############-->
+                <%@include file="includes/confirmar_excluir.jsp"%>
+                <!--############# MODAL CONFIRMAÇÃO DE EXCLUSÃO #############-->
+
                 <div class="panel panel-default">
                     <div class="panel-heading"> 
                         <div class="panel-heading titulo-painel">
@@ -48,7 +52,7 @@
 
                         <div class="table-responsive">
                             <table class="table table-hover">
-                            <center><h6 class="hidden-lg hidden-md hidden-sm"> [Role a tabela lateralmente se necessário]<h6></center>
+                                <center><h6 class="hidden-lg hidden-md hidden-sm"> [Role a tabela lateralmente se necessário]<h6></center>
                                 <tr>
                                     <th>Matrícula</th>
                                     <th>Nome</th>
@@ -62,7 +66,7 @@
                                     <td>(62)44444-4444</td>
                                     <td>professor01@nossaescola.com</td>
                                     <td class="editar-link"><a href="professor_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
-                                    <td class="excluir-link"><a href="#"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
+                                    <td class="excluir-link"><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
                                 </tr>
                                 <tr>
                                     <td>20</td>
@@ -70,7 +74,7 @@
                                     <td>(62)33333-3333</td>
                                     <td>professor02@nossaescola.com</td>
                                     <td class="editar-link"><a href="professor_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
-                                    <td class="excluir-link"><a href="#"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
+                                    <td class="excluir-link"><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
                                 </tr>
                                 <tr>
                                     <td>30</td>
@@ -78,7 +82,7 @@
                                     <td>(62)99999-9999</td>
                                     <td>professor03@nossaescola.com</td>
                                     <td class="editar-link"><a href="professor_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
-                                    <td class="excluir-link"><a href="#"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
+                                    <td class="excluir-link"><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
                                 </tr>    
                             </table>
                         </div><!-- Tabela Responsiva -->

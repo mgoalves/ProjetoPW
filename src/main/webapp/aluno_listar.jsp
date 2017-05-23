@@ -39,7 +39,9 @@
 					<!-- Div Conteudo -->
 					<div class="conteudo">
 
-						<br/><br/><br/>
+						<!--############# MODAL CONFIRMAÇÃO DE EXCLUSÃO #############-->
+						<%@include file="includes/confirmar_excluir.jsp"%>
+						<!--############# MODAL CONFIRMAÇÃO DE EXCLUSÃO #############-->
 
 						<div class="panel panel-default">
 							<div class="panel-heading"> 
@@ -70,7 +72,7 @@
 											<td>Goiânia</td>
 											<!-- opções para Editar ou excluir -->
 											<td class="editar-link"><a href="aluno_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
-											<td class="excluir-link"><a href="#"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
+											<td class="excluir-link"><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
 										</tr>
 										<tr>
 										<td>002</td>
@@ -81,7 +83,7 @@
 											<td>Goiânia</td>
 											<!-- opções para Editar ou excluir -->
 											<td class="editar-link"><a href="aluno_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
-											<td class="excluir-link"><a href="#"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
+											<td class="excluir-link"><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
 										</tr>
 										<tr>
 											<td>003</td>
@@ -92,7 +94,7 @@
 											<td>Goiânia</td>
 											<!-- opções para Editar ou excluir -->
 											<td class="editar-link"><a href="aluno_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
-											<td class="excluir-link"><a href="#"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
+											<td class="excluir-link"><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
 										</tr>
 									</table>
 								</div><!-- Tabela Responsiva -->
