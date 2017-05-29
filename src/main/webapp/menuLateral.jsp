@@ -18,7 +18,7 @@
 		<ul class="nav menu-lateral-mobile">
 
 				<!-- HOME -->
-				<li><a href="index.jsp"> <!-- Esse menu so parece para celular -->
+				<li><a href="home.jsp"> <!-- Esse menu so parece para celular -->
 					<div class="figure_32 hidden-lg hidden-md hidden-sm">
 						<img src="img/icones_menu_32/home_32px.png"
 						alt="Menu Botão Home"> <span>home</span>
