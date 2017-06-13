@@ -7,7 +7,7 @@
 
   <groupId>br.ufg.inf</groupId>
   <artifactId>PROJETO-DE-PW</artifactId>
-  <version>0.1.1-Version</version>
+  <version>2.0-Version</version>
   <packaging>war</packaging>
 
   <properties>
