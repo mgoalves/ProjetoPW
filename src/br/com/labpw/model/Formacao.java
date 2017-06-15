@@ -1,6 +1,6 @@
-package model;
+package br.com.labpw.model;
 
-public class FormacaoModel {
+public class Formacao {
 	
 	String mestrado;
 	String graduacao;

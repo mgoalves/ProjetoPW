@@ -1,6 +1,6 @@
-package model;
+package br.com.labpw.model;
 
-public class DisciplinaModel {
+public class Disciplina {
 	
 	String nome;
 	String duracao;

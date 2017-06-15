@@ -1,6 +1,6 @@
-package model;
+package br.com.labpw.model;
 
-public class ProfessorModel {
+public class Professor {
 	
 	String rg;
 	String cpf;
@@ -8,9 +8,9 @@ public class ProfessorModel {
 	int matricula;
 	String dataNascimento;
 	
-	EnderecoModel end;
+	Endereco end;
 	
-	FormacaoModel form;
+	Formacao form;
 	
 
 }

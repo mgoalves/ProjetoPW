@@ -1,6 +1,6 @@
-package model;
+package br.com.labpw.model;
 
-public abstract class EnderecoModel {
+public abstract class Endereco {
     
     String cidade;
     String bairro;
