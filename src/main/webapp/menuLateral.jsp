@@ -11,8 +11,6 @@
 		<a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#">MENU</a>
 	</div>
 
-	
-
 	<div id="navbar" class="navbar-collapse collapse">
 
 		<ul class="nav menu-lateral-mobile">
