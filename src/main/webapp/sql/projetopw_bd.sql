@@ -53,7 +53,7 @@ create table matricula(
 
 
 /* Inserindo usuários do sistema */
-insert into usuarios (usuario, senha) values ('hitalo', '123');
+insert into usuarios (usuario, senha) values ('hitallo', '123');
 insert into usuarios (usuario, senha) values ('jones', '123');
 insert into usuarios (usuario, senha) values ('marcelo', '123');
 insert into usuarios (usuario, senha) values ('reinaldo', '123');
