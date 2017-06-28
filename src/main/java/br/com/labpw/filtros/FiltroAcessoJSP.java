@@ -22,27 +22,21 @@ public class FiltroAcessoJSP implements Filter{
 	}
 	
 	private void dispatcher(HttpServletRequest request, HttpServletResponse response, String mensagem) throws ServletException, IOException{
-		((HttpServletRequest) request).setAttribute("menssagem", "Sessão inválida");
+		((HttpServletRequest) request).setAttribute("menssagem", mensagem);
 		((HttpServletRequest) request).getRequestDispatcher("/erroPage.jsp").forward(request, response);
 	}
 	
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
 		
-		Usuario usuario = (Usuario)((HttpServletRequest) request).getAttribute("usuario");
-		Boolean isLogado = (Boolean)((HttpServletRequest) request).getSession().getAttribute("logado");
+		Usuario usuario = (Usuario)((HttpServletRequest) request).getSession(false).getAttribute("usuario");
 		
-		if(isLogado == null){
-			
+
+		if(usuario == null){
 			this.dispatcher((HttpServletRequest) request, (HttpServletResponse)response, "Sessão inválida");
 			
-		}else if(isLogado){
-			
+		}else {
 			chain.doFilter(request, response);
-			
-		}else{
-			
-			this.dispatcher((HttpServletRequest) request, (HttpServletResponse)response, "Sessão inválida");
 		}
 		
 	}
