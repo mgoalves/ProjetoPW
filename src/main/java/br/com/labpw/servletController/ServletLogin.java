@@ -15,6 +15,7 @@ import br.com.labpw.connection.ConnectionFactory;
 import br.com.labpw.model.Usuario;
 import br.com.labpw.model.UsuarioDao;
 
+@SuppressWarnings("serial")
 @WebServlet("/servletlogin")
 public class ServletLogin extends HttpServlet {
 	
