@@ -71,7 +71,7 @@
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="dataNascimento">Nascimento</label>
 										<div class="col-lg-2 col-md-3 col-sm-5 col-xs-12">
-											<input class="form-control" id="dataNascimento" name="dataNascimento" type="date" value="aaaa-mm-dd"
+											<input class="form-control" id="dataNascimento" name="dataNascimento" type="text" value="aaaa-mm-dd"
 											id="example-date-input">
 										</div>
 									</div>
@@ -127,7 +127,7 @@
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="logradouro">Logradouro</label>
 										<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-											<input type="text" class="form-control" id="logradouro"
+											<input type="text" class="form-control" id="logradouro" name="logradouro"
 											placeholder="Logradouro">
 										</div>
 									</div>
