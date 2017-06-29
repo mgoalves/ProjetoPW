@@ -83,9 +83,30 @@ public class AlunoDao {
 		return aluno;
 	}
 
+	
+	// código para buscar alunos no banco e adicionar na lista
 	public ArrayList<Aluno> getList() {
+		
+		String sql = "select * from aluno";
+		int i = 0;
 		ArrayList<Aluno> alunos = new ArrayList<Aluno>();
-		// código para buscar alunos no banco e adicionar na lista
+		
+		
+		
+		for (i = 0; i < 0;){
+			
+			try {
+				PreparedStatement stmt = this.connection.prepareStatement(sql);
+				stmt.
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+		
+		
+		
 		return alunos;
 	}
 
