@@ -1,6 +1,6 @@
 package br.com.labpw.model;
 
-public abstract class Endereco {
+public class Endereco {
     
 	//Atributos de um objeto Endereco
 	private String cidade;
