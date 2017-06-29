@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 import java.sql.Date;
 
 public class AlunoDao {
@@ -46,16 +47,17 @@ public class AlunoDao {
 
 		String sql = "select * from aluno where MatrAluno = ?";
 		Aluno aluno = null;
-		
+
 		try {
 			// Cria um PreparedStatement e executa a query de pesquisa
 			PreparedStatement stmt = this.connection.prepareStatement(sql);
 			stmt.setString(1, matricula);
 			ResultSet rs = stmt.executeQuery();
-			
-			if(rs.next()){
-				aluno  = new Aluno();
-				//Seta os valores retornados na pesquisa para os atributos de aluno
+
+			if (rs.next()) {
+				aluno = new Aluno();
+				// Seta os valores retornados na pesquisa para os atributos de
+				// aluno
 				aluno.setMatricula(rs.getString("MatrAluno"));
 				aluno.setNome(rs.getString("Nome"));
 				aluno.setNomeMae(rs.getString("NomeMae"));
@@ -66,14 +68,13 @@ public class AlunoDao {
 				aluno.getEndereco().setLogradouro(rs.getString("Logradouro"));
 				aluno.getEndereco().setCep(rs.getString("Cep"));
 				aluno.getEndereco().setNumero(rs.getInt("Numero"));
-			
-				
-				//Convete a data retornada do banco para o tipo Calendar
+
+				// Convete a data retornada do banco para o tipo Calendar
 				Calendar dataNascimento = Calendar.getInstance();
 				dataNascimento.setTime(rs.getDate("DataNascimento"));
-				
-				//Seta a data de nascimento do aluno
-				aluno.setDataNascimento(dataNascimento);	
+
+				// Seta a data de nascimento do aluno
+				aluno.setDataNascimento(dataNascimento);
 			}
 
 		} catch (SQLException e) {
@@ -83,30 +84,50 @@ public class AlunoDao {
 		return aluno;
 	}
 
-	
 	// código para buscar alunos no banco e adicionar na lista
-	public ArrayList<Aluno> getList() {
-		
+	public List<Aluno> getList() {
+
 		String sql = "select * from aluno";
-		int i = 0;
-		ArrayList<Aluno> alunos = new ArrayList<Aluno>();
-		
-		
-		
-		for (i = 0; i < 0;){
-			
-			try {
-				PreparedStatement stmt = this.connection.prepareStatement(sql);
-				stmt.
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+		List<Aluno> alunos = new ArrayList<Aluno>();
+		Aluno aluno = null;
+
+		try {
+
+			PreparedStatement stmt = this.connection.prepareStatement(sql);
+			ResultSet rs = stmt.executeQuery();
+
+			while (rs.next()) {
+
+				aluno = new Aluno();
+				// Seta os valores retornados na pesquisa para os atributos de
+				// aluno
+				aluno.setMatricula(rs.getString("MatrAluno"));
+				aluno.setNome(rs.getString("Nome"));
+				aluno.setNomeMae(rs.getString("NomeMae"));
+				aluno.setRg(rs.getString("Rg"));
+				aluno.setCpf(rs.getString("Cpf"));
+				aluno.getEndereco().setCidade(rs.getString("Cidade"));
+				aluno.getEndereco().setBairro(rs.getString("Bairro"));
+				aluno.getEndereco().setLogradouro(rs.getString("Logradouro"));
+				aluno.getEndereco().setCep(rs.getString("Cep"));
+				aluno.getEndereco().setNumero(rs.getInt("Numero"));
+
+				// Convete a data retornada do banco para o tipo Calendar
+				Calendar dataNascimento = Calendar.getInstance();
+				dataNascimento.setTime(rs.getDate("DataNascimento"));
+
+				// Seta a data de nascimento do aluno
+				aluno.setDataNascimento(dataNascimento);
+
+				alunos.add(aluno);
+
 			}
-			
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			throw new RuntimeException(e.getMessage());
 		}
-		
-		
-		
+
 		return alunos;
 	}
 

@@ -10,6 +10,7 @@
 
 	<properties>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<dependencies>
@@ -27,7 +28,15 @@
 			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
-
+		
+		<!-- CDI API - Biblioteca de JAR 
+		<dependency>
+			<groupId>javax.enterprise</groupId>
+			<artifactId>cdi-api</artifactId>
+			<version>2.0</version>
+			<scope>provided</scope>
+		</dependency>
+		-->
 
 	</dependencies>
 
