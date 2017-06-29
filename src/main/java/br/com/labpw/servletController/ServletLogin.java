@@ -44,7 +44,7 @@ public class ServletLogin extends HttpServlet {
 			if (usuarioAutenticado != null) {
 				HttpSession sessao = request.getSession();
 				sessao.setAttribute("usuario", usuarioAutenticado);
-				sessao.setMaxInactiveInterval(2 * 60);
+				sessao.setMaxInactiveInterval(15 * 60);
 				request.getRequestDispatcher("/home.jsp").forward(request, response);
 
 			} else {
