@@ -34,7 +34,6 @@ public class ServletAluno extends HttpServlet {
 			request.getRequestDispatcher(pagina).forward(request, response);
 			
 		}catch(Exception e){
-			//System.out.println("Erro ao criar instância da lógica de negócio" + e);
 			response.getWriter().println("Erro ao executar lógica da aplicação" + e);
 		}
 
