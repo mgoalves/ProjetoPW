@@ -4,6 +4,10 @@
 <head>
 
 	<%@include file="includes/head.jsp"%>
+	
+	<script type="text/javascript" src="js/req.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	
 
 	<!--############# Para rolar para o formulario #############-->
 	<script type="text/javascript">
@@ -50,7 +54,8 @@
 							</div>
 							<div class="panel-body">
 
-								<form class="form-horizontal" id="cadastraAluno" action="servletaluno">
+								<form class="form-horizontal" id="cadastraAluno" action="servletaluno" method="post">
+								<!--  -->
 
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="matricula">Matrícula</label>
@@ -64,14 +69,14 @@
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="nome">Nome</label>
 										<div class="col-lg-4 col-md-7 col-sm-9 col-xs-12">
 											<input type="text" class="form-control" id="nome" name="nome"
-											placeholder="Nome">
+											placeholder="Nome"">
 										</div>
 									</div>
 
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="dataNascimento">Nascimento</label>
 										<div class="col-lg-2 col-md-3 col-sm-5 col-xs-12">
-											<input class="form-control" id="dataNascimento" name="dataNascimento" type="text" value="aaaa-mm-dd"
+											<input class="form-control" id="dataNascimento" name="dataNascimento" type="text" required="required" placeholder="aaaa-mm-dd"
 											id="example-date-input">
 										</div>
 									</div>
@@ -79,7 +84,7 @@
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="nomeMae">Mãe</label>
 										<div class="col-lg-2 col-md-7 col-sm-9 col-xs-12">
-											<input type="text" class="form-control" id="nomeMae" name="nomeMae"
+											<input type="text" class="form-control" id="nomeMae" name="nomeMae""
 											placeholder="Nome da mãe">
 										</div>
 									</div>
@@ -144,7 +149,7 @@
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label"></label>
 										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-											<button class="col-lg-3 col-md-4 col-sm-6 col-xs-12 btn btn-primary" type="submit">Salvar</button>
+											<button class="col-lg-3 col-md-4 col-sm-6 col-xs-12 btn btn-primary" type="submit" >Salvar</button>
 										</div>
 									</div>
 
