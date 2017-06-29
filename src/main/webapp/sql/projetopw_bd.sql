@@ -1,23 +1,23 @@
 /* cria o banco de dados de nome "projetopw_db" */
 create database projetopw_bd;
 
-/* especifica ao servidor de banco de dados que queremos usar o banco de dados rec√©m criado*/
+# especifica ao servidor de banco de dados que queremos usar o banco de dados recÈm criado
 use projetopw_bd;
 
-/* comando para criar a tabela de usu√°rios do sistema */
+/* comando para criar a tabela de usu·rios do sistema */
 create table usuarios(
     usuario varchar(20),
     senha varchar(15),
     primary key (usuario, senha)
 );
 	
-/* Alterando a engine da tabela usuarios para innodb*/
+# Alterando a engine da tabela usuarios para innodb
 alter table usuarios engine = InnoDB;
 
 
 /* comando para criar a tabela de alunos */
 create table aluno(
-	MatrAluno varchar(10) not null,
+	MatrAluno integer(10) auto_increment,
     Nome varchar(50) not null,
     DataNascimento date,
     Rg varchar(15),
@@ -28,8 +28,12 @@ create table aluno(
     Logradouro varchar(30),
     Cep varchar(8),
     Numero int(4),
-    constraint primary key(MatrAluno)
+    constraint PK_ALUNO primary key(MatrAluno)
 ) ENGINE = innodb;
+alter table aluno add constraint unique(Cpf);
+
+
+select * from aluno;
 	
 
 /* comando para criar a tabela de cursos */
@@ -43,7 +47,7 @@ create table curso(
 
 /* comando para criar a tabela de matriculas */
 create table matricula(
-	Aluno varchar(10) not null,
+	Aluno integer(10) not null,
     Curso varchar(10) not null,
     Situacao varchar(10) not null,
     DataMatricula date,
@@ -52,8 +56,12 @@ create table matricula(
 ) ENGINE = innodb;
 
 
-/* Inserindo usu√°rios do sistema */
-insert into usuarios (usuario, senha) values ('hitallo', '123');
+
+
+select * from aluno;
+
+# Inserindo usu·rios do sistema 
+insert into usuarios (usuario, senha) values ('hitalo', '123');
 insert into usuarios (usuario, senha) values ('jones', '123');
 insert into usuarios (usuario, senha) values ('marcelo', '123');
 insert into usuarios (usuario, senha) values ('reinaldo', '123');
@@ -61,7 +69,7 @@ insert into usuarios (usuario, senha) values ('walison', '123');
 
 
 
-/* Exemplo de cria√ß√£o de tabela com chave prim√°ria
+/* Exemplo de criaÁ„o de tabela com chave prim·ria
 
 CREATE TABLE teste ( 
 codigo int(7) NOT NULL default '0',  
