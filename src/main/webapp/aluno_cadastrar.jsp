@@ -50,7 +50,7 @@
 							</div>
 							<div class="panel-body">
 
-								<form class="form-horizontal" id="cadastraAluno">
+								<form class="form-horizontal" id="cadastraAluno" action="servletaluno">
 
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="matricula">Matrícula</label>
