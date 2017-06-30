@@ -34,9 +34,7 @@ public class ServletAluno extends HttpServlet {
 			request.getRequestDispatcher(pagina).forward(request, response);
 			
 		}catch(Exception e){
-			response.getWriter().println("Erro ao executar lógica da aplicação" + e);
+			response.getWriter().println("Erro ao executar lógica da aplicação: " + e);
 		}
-
 	}
-
 }
