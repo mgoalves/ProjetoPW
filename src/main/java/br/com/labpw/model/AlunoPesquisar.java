@@ -20,7 +20,8 @@ public class AlunoPesquisar implements LogicaAluno {
 		AlunoDao dao = new AlunoDao(connection);
 
 		Aluno aluno = dao.pesquisarPorNome(nome);
-		//response.getWriter().println("adfdf");
+		
+		connection.close();
 
 		request.setAttribute("aluno", aluno);
 		return "alunos.jsp";

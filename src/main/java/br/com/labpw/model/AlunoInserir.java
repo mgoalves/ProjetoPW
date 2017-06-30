@@ -39,8 +39,7 @@ public class AlunoInserir implements LogicaAluno {
 			return "aluno_cadastrar.jsp";
 		} else {
 
-			// Solicita uma conexão para a ConnectionFactory
-			Connection connection = new ConnectionFactory().getConnection();
+			Connection connection = null;
 
 			try {
 				// Faz a conversão da data de nascimento
@@ -64,15 +63,22 @@ public class AlunoInserir implements LogicaAluno {
 				aluno.setRg(RgStr);
 				aluno.setCpf(CpfStr);
 				aluno.setEndereco(endereco);
+				
+				// Solicita uma conexão para a ConnectionFactory
+				connection = new ConnectionFactory().getConnection();
 
 				// Instancia um AlunoDao e executa o método de inserir
 				AlunoDao dao = new AlunoDao(connection);
 				dao.inserir(aluno);
-				//request.getRequestDispatcher("aluno_listar.jsp").forward(request, response);
+				
 
 			} catch (ParseException e) {
 				System.out.println("Erro de conversão de data!!");
 				// return;
+			}finally {
+				if(connection!=null){
+					connection.close();
+				}
 			}
 
 		}
