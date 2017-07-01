@@ -33,6 +33,7 @@ create table aluno(
 /*MODIFICANDO A ESTRUTURA DA TABELA DE ALUNOS*/
 alter table aluno add constraint unique(Cpf);
 alter table aluno modify Numero varchar(5);
+alter table aluno modify MatrAluno int(5);
 
 
 select * from aluno;
