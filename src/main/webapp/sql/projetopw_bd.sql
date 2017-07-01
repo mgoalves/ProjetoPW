@@ -17,24 +17,19 @@ alter table usuarios engine = InnoDB;
 
 /* comando para criar a tabela de alunos */
 create table aluno(
-	MatrAluno integer(10) auto_increment,
+	MatrAluno integer(5) auto_increment,
     Nome varchar(50) not null,
     DataNascimento date,
     Rg varchar(15),
-    Cpf varchar(11),
+    Cpf varchar(11) unique,
     NomeMae varchar(50) not null,
     Cidade varchar(30),
     Bairro varchar(30),
     Logradouro varchar(30),
     Cep varchar(8),
-    Numero int(4),
+    Numero varchar(5),
     constraint PK_ALUNO primary key(MatrAluno)
 ) ENGINE = innodb;
-/*MODIFICANDO A ESTRUTURA DA TABELA DE ALUNOS*/
-alter table aluno add constraint unique(Cpf);
-alter table aluno modify Numero varchar(5);
-alter table aluno modify MatrAluno int(5);
-
 
 select * from aluno;
 	
