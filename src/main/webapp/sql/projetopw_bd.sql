@@ -30,7 +30,9 @@ create table aluno(
     Numero int(4),
     constraint PK_ALUNO primary key(MatrAluno)
 ) ENGINE = innodb;
+/*MODIFICANDO A ESTRUTURA DA TABELA DE ALUNOS*/
 alter table aluno add constraint unique(Cpf);
+alter table aluno modify Numero varchar(5);
 
 
 select * from aluno;
