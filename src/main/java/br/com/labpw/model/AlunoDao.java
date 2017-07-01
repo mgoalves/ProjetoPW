@@ -1,12 +1,13 @@
 package br.com.labpw.model;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.sql.Date;
+import java.util.List;
 
 public class AlunoDao {
 
@@ -17,9 +18,9 @@ public class AlunoDao {
 	}
 
 	public void inserir(Aluno aluno) {
-		
+
 		String sql = "insert into aluno "
-				+ "(Nome, DataNascimento, Rg, Cpf, NomeMae, Cidade, Bairro, Logradouro, Cep, Numero) " 
+				+ "(Nome, DataNascimento, Rg, Cpf, NomeMae, Cidade, Bairro, Logradouro, Cep, Numero) "
 				+ "values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		Date dataNascimento = new Date(aluno.getDataNascimento().getTimeInMillis());
 
@@ -34,7 +35,7 @@ public class AlunoDao {
 			stmt.setString(7, aluno.getEndereco().getBairro());
 			stmt.setString(8, aluno.getEndereco().getLogradouro());
 			stmt.setString(9, aluno.getEndereco().getCep());
-			stmt.setInt(10, aluno.getEndereco().getNumero());
+			stmt.setString(10, aluno.getEndereco().getNumero());
 
 			stmt.execute();
 		} catch (SQLException e) {
@@ -43,21 +44,23 @@ public class AlunoDao {
 
 	}
 
-	public Aluno pesquisar(String matricula) {
-
-		String sql = "select * from aluno where MatrAluno = ?";
-		Aluno aluno = null;
-		
+	
+	public List<Aluno> pesquisarPorNome(String nome) {
 		try {
-			// Cria um PreparedStatement e executa a query de pesquisa
-			PreparedStatement stmt = this.connection.prepareStatement(sql);
-			stmt.setString(1, matricula);
-			ResultSet rs = stmt.executeQuery();
+			List<Aluno> alunos = new ArrayList<Aluno>();
 			
-			if(rs.next()){
-				aluno  = new Aluno();
-				//Seta os valores retornados na pesquisa para os atributos de aluno
-				aluno.setMatricula(rs.getString("MatrAluno"));
+			String sql = "select * from aluno where Nome like ? '%'";
+			PreparedStatement stmt = this.connection.prepareStatement(sql);
+			stmt.setString(1, nome);
+			ResultSet rs = stmt.executeQuery();
+
+			while (rs.next()) {
+				
+				Aluno aluno = new Aluno();
+				aluno.setEndereco(new Endereco());
+
+				// Seta os valores retornados na pesquisa para os atributos de aluno
+				aluno.setMatricula(rs.getInt("MatrAluno"));
 				aluno.setNome(rs.getString("Nome"));
 				aluno.setNomeMae(rs.getString("NomeMae"));
 				aluno.setRg(rs.getString("Rg"));
@@ -66,28 +69,103 @@ public class AlunoDao {
 				aluno.getEndereco().setBairro(rs.getString("Bairro"));
 				aluno.getEndereco().setLogradouro(rs.getString("Logradouro"));
 				aluno.getEndereco().setCep(rs.getString("Cep"));
-				aluno.getEndereco().setNumero(rs.getInt("Numero"));
-			
-				
-				//Convete a data retornada do banco para o tipo Calendar
+				aluno.getEndereco().setNumero(rs.getString("Numero"));
+
+				// Convete a data retornada do banco para o tipo Calendar
 				Calendar dataNascimento = Calendar.getInstance();
 				dataNascimento.setTime(rs.getDate("DataNascimento"));
+
+				// Seta a data de nascimento do aluno
+				aluno.setDataNascimento(dataNascimento);
 				
-				//Seta a data de nascimento do aluno
-				aluno.setDataNascimento(dataNascimento);	
+				alunos.add(aluno);
+			}
+			return alunos;
+		} catch (SQLException e) {
+			throw new RuntimeException(e.getMessage());
+		}
+		
+	}
+	
+	
+	//PESQUISAR POR MATRICULA
+	public Aluno pesquisarPorMatricula(String matricula) {
+		Aluno aluno = null;
+		Endereco endereco = new Endereco();
+		try {
+			String sql = "select * from aluno where MatrAluno=?";
+			PreparedStatement stmt = this.connection.prepareStatement(sql);
+			stmt.setString(1, matricula);
+			ResultSet rs = stmt.executeQuery();
+
+			if (rs.next()) {
+				aluno = new Aluno();
+				aluno.setEndereco(endereco);
+
+				// Seta os valores retornados na pesquisa para os atributos de aluno
+				aluno.setMatricula(rs.getInt("MatrAluno"));
+				aluno.setNome(rs.getString("Nome"));
+				aluno.setNomeMae(rs.getString("NomeMae"));
+				aluno.setRg(rs.getString("Rg"));
+				aluno.setCpf(rs.getString("Cpf"));
+				aluno.getEndereco().setCidade(rs.getString("Cidade"));
+				aluno.getEndereco().setBairro(rs.getString("Bairro"));
+				aluno.getEndereco().setLogradouro(rs.getString("Logradouro"));
+				aluno.getEndereco().setCep(rs.getString("Cep"));
+				aluno.getEndereco().setNumero(rs.getString("Numero"));
+
+				// Convete a data retornada do banco para o tipo Calendar
+				Calendar dataNascimento = Calendar.getInstance();
+				dataNascimento.setTime(rs.getDate("DataNascimento"));
+
+				// Seta a data de nascimento do aluno
+				aluno.setDataNascimento(dataNascimento);
 			}
 
 		} catch (SQLException e) {
 			throw new RuntimeException(e.getMessage());
 		}
-
 		return aluno;
 	}
+	
+	
 
-	public ArrayList<Aluno> getList() {
-		ArrayList<Aluno> alunos = new ArrayList<Aluno>();
-		// código para buscar alunos no banco e adicionar na lista
-		return alunos;
+	public List<Aluno> getLista() {		
+		try{
+			List<Aluno> alunos = new ArrayList<Aluno>();
+			PreparedStatement stmt = this.connection.prepareStatement("select * from aluno");
+			ResultSet rs = stmt.executeQuery();
+			
+			
+			while(rs.next()){
+				Aluno aluno = new Aluno();
+				aluno.setEndereco(new Endereco());
+				// Seta os valores retornados na pesquisa para os atributos de aluno
+				aluno.setMatricula(rs.getInt("MatrAluno"));
+				aluno.setNome(rs.getString("Nome"));
+				aluno.setNomeMae(rs.getString("NomeMae"));
+				aluno.setRg(rs.getString("Rg"));
+				aluno.setCpf(rs.getString("Cpf"));
+				aluno.getEndereco().setCidade(rs.getString("Cidade"));
+				aluno.getEndereco().setBairro(rs.getString("Bairro"));
+				aluno.getEndereco().setLogradouro(rs.getString("Logradouro"));
+				aluno.getEndereco().setCep(rs.getString("Cep"));
+				aluno.getEndereco().setNumero(rs.getString("Numero"));
+				
+				//Convertendo data para Calendar e setando como atributo de aluno
+				Calendar dataNascimento = Calendar.getInstance();
+				dataNascimento.setTime(rs.getDate("DataNascimento"));
+				
+				aluno.setDataNascimento(dataNascimento);
+				
+				//Adicionando aluno na lista
+				alunos.add(aluno);
+				
+			}
+			return alunos;
+		}catch(SQLException e){
+			throw new RuntimeException("Erro na listagem de alunos: " + e);
+		}	
 	}
 
 	public void editar(Aluno aluno) {

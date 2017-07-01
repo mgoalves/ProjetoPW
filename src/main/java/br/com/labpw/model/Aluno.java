@@ -9,7 +9,7 @@ import java.util.Calendar;
 public class Aluno {
 
 	// Atributos de um objeto do tipo Aluno
-	private String matricula = null;
+	private int matricula = 0;
 	private String nome = null;
 	private Calendar dataNascimento = null;
 	private String rg = null;
@@ -19,10 +19,10 @@ public class Aluno {
 	
 	
 	// Métodos acessores dos atributos de um objeto Aluno
-	public String getMatricula() {
+	public int getMatricula() {
 		return matricula;
 	}
-	public void setMatricula(String matricula) {
+	public void setMatricula(int matricula) {
 		this.matricula = matricula;
 	}
 	public String getNome() {

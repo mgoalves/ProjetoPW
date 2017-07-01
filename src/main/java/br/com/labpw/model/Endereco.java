@@ -7,7 +7,7 @@ public class Endereco {
 	private String bairro;
 	private String logradouro;
 	private String cep;
-	private int numero;
+	private String numero;
 		
 	
 	//Métodos acessores para os atributos de um objeto Endereco
@@ -35,10 +35,10 @@ public class Endereco {
 	public void setCep(String cep) {
 		this.cep = cep;
 	}
-	public int getNumero() {
+	public String getNumero() {
 		return numero;
 	}
-	public void setNumero(int numero) {
+	public void setNumero(String numero) {
 		this.numero = numero;
 	}
 	

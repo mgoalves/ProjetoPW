@@ -30,16 +30,25 @@ public class AlunoInserir implements LogicaAluno {
 
 		// Verifica se os parâmetros foram passados na requisição
 		if (NomeStr == null || NomeMaeStr == null || DataNascimentoStr == null) {
-			//request.getRequestDispatcher("aluno_cadastrar.jsp").forward(request, response);
+			
 			return "aluno_cadastrar.jsp";
-		} else if (NomeStr.isEmpty() || NomeMaeStr.isEmpty() || DataNascimentoStr.isEmpty()
-				|| RgStr.isEmpty() || CpfStr.isEmpty() || CidadeStr.isEmpty() || BairroStr.isEmpty()
-				|| LogradouroStr.isEmpty() || CepStr.isEmpty() || NumeroStr.isEmpty()) {
-			//request.getRequestDispatcher("aluno_cadastrar.jsp").forward(request, response);
+			
+		} else if (NomeStr.isEmpty() || NomeMaeStr.isEmpty() || DataNascimentoStr.isEmpty() || CpfStr.isEmpty() || CidadeStr.isEmpty()) {
+			
+			request.setAttribute("nome", NomeStr);
+			request.setAttribute("mae", NomeMaeStr);
+			request.setAttribute("nascimento", DataNascimentoStr);
+			request.setAttribute("cpf", CpfStr);
+			request.setAttribute("rg", RgStr);
+			request.setAttribute("cep", CepStr);
+			request.setAttribute("cidade", CidadeStr);
+			request.setAttribute("bairro", BairroStr);
+			request.setAttribute("logradouro", LogradouroStr);
+			request.setAttribute("numero", NumeroStr);
+			
 			return "aluno_cadastrar.jsp";
-		} else {
-
-			Connection connection = null;
+			
+		} else {	
 
 			try {
 				// Faz a conversão da data de nascimento
@@ -53,7 +62,7 @@ public class AlunoInserir implements LogicaAluno {
 				endereco.setBairro(BairroStr);
 				endereco.setLogradouro(LogradouroStr);
 				endereco.setCep(CepStr);
-				endereco.setNumero(Integer.parseInt(NumeroStr));
+				endereco.setNumero(NumeroStr);
 
 				// Instancia um aluno e seta seus atributos
 				Aluno aluno = new Aluno();
@@ -65,20 +74,17 @@ public class AlunoInserir implements LogicaAluno {
 				aluno.setEndereco(endereco);
 				
 				// Solicita uma conexão para a ConnectionFactory
-				connection = new ConnectionFactory().getConnection();
+				Connection connection = new ConnectionFactory().getConnection();
 
 				// Instancia um AlunoDao e executa o método de inserir
 				AlunoDao dao = new AlunoDao(connection);
 				dao.inserir(aluno);
+				connection.close();
 				
 
 			} catch (ParseException e) {
 				System.out.println("Erro de conversão de data!!");
 				// return;
-			}finally {
-				if(connection!=null){
-					connection.close();
-				}
 			}
 
 		}
