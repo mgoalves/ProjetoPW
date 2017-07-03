@@ -16,8 +16,8 @@
 
 			<div class="jumbotron painel-index"
 				style="width: 50%; margin: auto; text-align: center;">
-				<p>${menssagem}</p>
-				<a href="index.html">Login</a>
+				<p>${erro}</p>
+				<a href="${nextPage}">${messageLink}...</a>
 			</div>
 
 
