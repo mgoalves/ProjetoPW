@@ -1,4 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,7 +8,6 @@
 </head>
 
 <body>
-
 	<div class="wrapper" role="main">
 
 		<div class="container-fluid">
@@ -51,9 +52,10 @@
 							</div>
 							<div class="panel-body">
 
-								<div class="table-responsive">
+								<div class="table-responsive" style="box-shadow: 0px 0px 5px rgba(0,0,0,.5);">
+									
 									<table class="table table-hover">
-										<center><h6 class="hidden-lg hidden-md hidden-sm"> [Role a tabela lateralmente se necessário]<h6></center>
+										<h6 class="hidden-lg hidden-md hidden-sm"> [Role a tabela lateralmente se necessário]<h6>
 										<tr>
 											<th>Matrícula</th>
 											<th>Nome</th>
@@ -61,41 +63,23 @@
 											<th>CPF</th>
 											<th>RG</th>
 											<th>Cidade</th>
+											<th>Bairro</th>
 											<th colspan="2">Ações</th>
-										</tr>
-										<tr>
-											<td>001</td>
-											<td>Caio Benício Lorenzo Castro</td>
-											<td>15/11/1995</td>
-											<td>888.844.241-35</td>
-											<td>31.844.428-8</td>
-											<td>Goiânia</td>
-											<!-- opções para Editar ou excluir -->
-											<td class="editar-link"><a href="aluno_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
-											<td class="excluir-link"><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
-										</tr>
-										<tr>
-										<td>002</td>
-											<td>Carlos Eduardo Alexandre Miguel Pinto</td>
-											<td>26/02/1999</td>
-											<td>201.789.201-77</td>
-											<td>15.497.644-1</td>
-											<td>Goiânia</td>
-											<!-- opções para Editar ou excluir -->
-											<td class="editar-link"><a href="aluno_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
-											<td class="excluir-link"><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
-										</tr>
-										<tr>
-											<td>003</td>
-											<td>Danilo Joaquim Almeida</td>
-											<td>08/10/1992</td>
-											<td>120.206.911-83</td>
-											<td>27.205.774-5</td>
-											<td>Goiânia</td>
-											<!-- opções para Editar ou excluir -->
-											<td class="editar-link"><a href="aluno_editar.jsp"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
-											<td class="excluir-link"><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
-										</tr>
+
+										<c:forEach var="aluno" items="${lista}" varStatus="contador">
+											<tr bgcolor="#${contador.count %2 == 0? 'aaee88': 'ffffff' }">
+												<td>${aluno.matricula}</td>
+												<td>${aluno.nome}</td>
+												<td><fmt:formatDate value="${aluno.dataNascimento.time}" pattern="dd/MM/yyyy"/></td>
+												<td>${aluno.cpf}</td>
+												<td>${aluno.rg}</td>
+												<td>${aluno.endereco.cidade}</td>
+												<td>${aluno.endereco.bairro}</td>
+	
+												<td class="editar-link"><a href="servletaluno?logica=AlunoEditar&operacao=buscar&matricula=${aluno.matricula}"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
+												<td class="excluir-link"><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
+											</tr>
+										</c:forEach>
 									</table>
 								</div><!-- Tabela Responsiva -->
 

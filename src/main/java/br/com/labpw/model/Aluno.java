@@ -3,27 +3,26 @@ package br.com.labpw.model;
 import java.util.Calendar;
 
 /**
- *
  * @author Hitallo, Jones, Marcello e Reinaldo.
  */
 
 public class Aluno {
 
 	// Atributos de um objeto do tipo Aluno
-	private String matricula;
-	private String nome;
-	private Calendar dataNascimento;
-	private String rg;
-	private String cpf;
-	private String nomeMae;
-	private Endereco endereco;
+	private int matricula = 0;
+	private String nome = null;
+	private Calendar dataNascimento = null;
+	private String rg = null;
+	private String cpf = null;
+	private String nomeMae = null;
+	private Endereco endereco = null;
 	
 	
 	// Métodos acessores dos atributos de um objeto Aluno
-	public String getMatricula() {
+	public int getMatricula() {
 		return matricula;
 	}
-	public void setMatricula(String matricula) {
+	public void setMatricula(int matricula) {
 		this.matricula = matricula;
 	}
 	public String getNome() {

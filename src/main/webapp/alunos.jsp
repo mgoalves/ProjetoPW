@@ -1,3 +1,7 @@
+<%@page import="java.util.List"%>
+<%@page import="br.com.labpw.model.*"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html; charset=UTF-8"%>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -37,7 +41,36 @@
 					<!--############# FAIXA DE OPÇÕES #############-->
 
 					<!-- Div Conteudo -->
-					<div class="conteudo">
+					<div class="conteudo">	
+					
+						<h4>Resultado: </h4>
+						<div class="table-responsive" style="box-shadow: 0px 0px 5px rgba(0,0,0,.5);">
+									
+							<table class="table table-hover">
+								<tr>
+									<th>Matrícula</th>
+									<th>Nome</th>
+									<th>Nascimento</th>
+									<th>CPF</th>
+									<th>RG</th>
+									<th>Cidade</th>
+									<th colspan="2">Ações</th>
+
+								<c:forEach var="aluno" items="${lista}" varStatus="contador">
+									<tr bgcolor="#${contador.count %2 == 0? 'aaee88': 'ffffff' }">
+										<td>${aluno.matricula}</td>
+										<td>${aluno.nome}</td>
+										<td><fmt:formatDate value="${aluno.dataNascimento.time}" pattern="dd/MM/yyyy"/></td>
+										<td>${aluno.cpf}</td>
+										<td>${aluno.rg}</td>
+										<td>${aluno.endereco.cidade}</td>
+
+										<td class="editar-link"><a href="servletaluno?logica=AlunoEditar&operacao=buscar&matricula=${aluno.matricula}"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
+										<td class="excluir-link"><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
+									</tr>
+								</c:forEach>
+							</table>
+						</div><!-- Tabela Responsiva -->
 						
 					</div>
 					<!-- FIM Div Conteudo -->

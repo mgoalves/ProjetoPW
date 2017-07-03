@@ -4,6 +4,10 @@
 <head>
 
 	<%@include file="includes/head.jsp"%>
+	
+	<script type="text/javascript" src="js/req.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	
 
 	<!--############# Para rolar para o formulario #############-->
 	<script type="text/javascript">
@@ -50,93 +54,93 @@
 							</div>
 							<div class="panel-body">
 
-								<form class="form-horizontal" id="cadastraAluno" action="servletaluno">
+								<form class="form-horizontal" id="cadastraAluno" action="servletaluno?logica=AlunoInserir" method="post">
+								<!--  -->
 
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="matricula">Matrícula</label>
 										<div class="col-lg-2 col-md-5 col-sm-9 col-xs-12">
-											<input type="text" class="form-control" id="matricula" name="matricula"
+											<input type="text" class="form-control" id="matricula" name="matricula" readonly="true"
 											placeholder="Matrícula">
 										</div>
 									</div>
 
 									<div class="form-group">
-										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="nome">Nome</label>
+										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="nome">Nome<span style="color: red">*</span></label>
 										<div class="col-lg-4 col-md-7 col-sm-9 col-xs-12">
-											<input type="text" class="form-control" id="nome" name="nome"
-											placeholder="Nome">
+											<input type="text" class="form-control" id="nome" name="nome" required="true" maxlength="50" value="${nome}"
+											placeholder="Nome"">
 										</div>
 									</div>
 
 									<div class="form-group">
-										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="dataNascimento">Nascimento</label>
-										<div class="col-lg-2 col-md-3 col-sm-5 col-xs-12">
-											<input class="form-control" id="dataNascimento" name="dataNascimento" type="text" value="aaaa-mm-dd"
-											id="example-date-input">
+										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="dataNascimento">Nascimento<span style="color: red">*</span></label>
+										<div class="col-lg-4 col-md-7 col-sm-9 col-xs-12">
+											<input class="form-control" id="dataNascimento" name="dataNascimento" type="text" required="true" value="${nascimento}"
+											placeholder="aaaa-mm-dd" id="example-date-input">
 										</div>
 									</div>
-
+									
 									<div class="form-group">
-										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="nomeMae">Mãe</label>
-										<div class="col-lg-2 col-md-7 col-sm-9 col-xs-12">
-											<input type="text" class="form-control" id="nomeMae" name="nomeMae"
-											placeholder="Nome da mãe">
+										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="cpf">CPF<span style="color: red">*</span></label>
+										<div class="col-lg-4 col-md-7 col-sm-9 col-xs-12">
+											<input type="text" class="form-control" id="cpf" required="true" value="${cpf}"
+											placeholder="000.000.000-00" name="cpf" maxlength="11">
 										</div>
 									</div>
 
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="rg">RG</label>
-										<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-											<input type="text" class="form-control" id="rg" name="rg"
+										<div class="col-lg-4 col-md-7 col-sm-9 col-xs-12">
+											<input type="text" class="form-control" id="rg" name="rg" maxlength="15" value="${rg}"
 											placeholder="00.000.000-0">
 										</div>
 									</div>
-
+									
 									<div class="form-group">
-										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="cpf">CPF</label>
-										<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-											<input type="text" class="form-control" id="cpf" 
-											placeholder="000.000.000-00" name="cpf" maxlength="14">
-										</div>
-									</div>
-
-									<div class="form-group">
-										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="cidade">Cidade</label>
-										<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-											<input type="text" class="form-control" id="cidade" name="cidade"
-											placeholder="Cidade">
+										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="nomeMae">Mãe<span style="color: red">*</span></label>
+										<div class="col-lg-4 col-md-7 col-sm-9 col-xs-12">
+											<input type="text" class="form-control" id="nomeMae" name="nomeMae" required="true" maxlength="50" value="${mae}"
+											placeholder="Nome da mãe">
 										</div>
 									</div>
 
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="cep">CEP</label>
-										<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-											<input type="text" class="form-control" id="cep"
-											placeholder="00.000-000" name="cep" maxlength="10">
+										<div class="col-lg-4 col-md-7 col-sm-9 col-xs-12">
+											<input type="text" class="form-control" id="cep" value="${cep}"
+											placeholder="00.000-000" name="cep" maxlength="8">
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="cidade">Cidade<span style="color: red">*</span></label>
+										<div class="col-lg-4 col-md-7 col-sm-9 col-xs-12">
+											<input type="text" class="form-control" id="cidade" name="cidade" required="true" maxlength="30" value="${cidade}"
+											placeholder="Cidade" />
 										</div>
 									</div>
 
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="bairro">Bairro</label>
-										<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-											<input type="text" class="form-control" id="bairro" name="bairro"
+										<div class="col-lg-4 col-md-7 col-sm-9 col-xs-12">
+											<input type="text" class="form-control" id="bairro" name="bairro" maxlength="30" value="${bairro}"
 											placeholder="Bairro">
 										</div>
 									</div>
 
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="logradouro">Logradouro</label>
-										<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-											<input type="text" class="form-control" id="logradouro" name="logradouro"
+										<div class="col-lg-4 col-md-7 col-sm-9 col-xs-12">
+											<input type="text" class="form-control" id="logradouro" name="logradouro" maxlength="30" value="${logradouro}"
 											placeholder="Logradouro">
 										</div>
 									</div>
 
-
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="numero">Número</label>
-										<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-											<input type="number" class="form-control" id="numero" name="numero"
+										<div class="col-lg-4 col-md-7 col-sm-9 col-xs-12">
+											<input type="text" class="form-control" id="numero" name="numero" maxlength="5" value="${numero}"
 											placeholder="Número">
 										</div>
 									</div>
@@ -144,7 +148,7 @@
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label"></label>
 										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-											<button class="col-lg-3 col-md-4 col-sm-6 col-xs-12 btn btn-primary" type="submit">Salvar</button>
+											<button class="col-lg-6 col-md-4 col-sm-6 col-xs-12 btn btn-primary" type="submit" >Salvar</button>
 										</div>
 									</div>
 

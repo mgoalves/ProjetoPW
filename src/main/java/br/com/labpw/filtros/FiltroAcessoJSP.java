@@ -29,7 +29,7 @@ public class FiltroAcessoJSP implements Filter{
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
 		
-		Usuario usuario = (Usuario)((HttpServletRequest) request).getSession(false).getAttribute("usuario");
+		Usuario usuario = (Usuario)((HttpServletRequest) request).getSession().getAttribute("usuario");
 		
 
 		if(usuario == null){
