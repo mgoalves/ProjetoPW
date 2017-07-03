@@ -168,8 +168,26 @@ public class AlunoDao {
 		}	
 	}
 
-	public void editar(Aluno aluno) {
-		// codigo para atualizar os dados do aluno no banco
+	public boolean editar(Aluno aluno) throws SQLException {
+		String sql = "update aluno set Nome=?, NomeMae=?, DataNascimento=? Rg=?, Cpf=?, Cidade=?, "
+					+ "Bairro=?, Logradouro=?, Cep=?, Numero=? where MatrAluno=?";
+		
+		PreparedStatement stmt = this.connection.prepareStatement(sql);
+		stmt.setString(1, aluno.getNome());
+		stmt.setString(2, aluno.getNomeMae());
+		stmt.setDate(3, new Date(aluno.getDataNascimento().getTimeInMillis()));
+		stmt.setString(4, aluno.getRg());
+		stmt.setString(5, aluno.getCpf());
+		stmt.setString(6, aluno.getEndereco().getCidade());
+		stmt.setString(7, aluno.getEndereco().getBairro());
+		stmt.setString(8, aluno.getEndereco().getLogradouro());
+		stmt.setString(9, aluno.getEndereco().getCep());
+		stmt.setString(10, aluno.getEndereco().getNumero());
+		stmt.setInt(11, aluno.getMatricula());
+		
+		return stmt.execute();
+		
+		
 	}
 
 }

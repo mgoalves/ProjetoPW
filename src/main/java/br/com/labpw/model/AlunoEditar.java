@@ -1,6 +1,7 @@
 package br.com.labpw.model;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -32,6 +33,7 @@ public class AlunoEditar implements LogicaAluno {
 		} else if (operacao.equals("alterar")) {
 
 			// Recupera os parâmetros da requisição
+			String MatriculaStr = request.getParameter("matricula");
 			String NomeStr = request.getParameter("nome");
 			String NomeMaeStr = request.getParameter("nomeMae");
 			String DataNascimentoStr = request.getParameter("dataNascimento");
@@ -45,14 +47,20 @@ public class AlunoEditar implements LogicaAluno {
 			Calendar dataNascimento;
 
 			// Verifica se os parâmetros foram passados na requisição
-			if (NomeStr == null || NomeMaeStr == null || DataNascimentoStr == null) {
+			if (MatriculaStr==null || NomeStr == null || NomeMaeStr == null || DataNascimentoStr == null) {
 
-				return "aluno_cadastrar.jsp";
+				request.setAttribute("erro", "Página acessada de uma URL inválida!!");
+				request.setAttribute("nextPage", "servletaluno?logica=AlunoEditar&operacao=buscar&matricula="+ MatriculaStr);
+				request.setAttribute("messageLink", "Tentar Novamente...");
+				return "erroPage.jsp";
 
-			} else if (NomeStr.isEmpty() || NomeMaeStr.isEmpty() || DataNascimentoStr.isEmpty() || CpfStr.isEmpty()
+			} else if (MatriculaStr.isEmpty() || NomeStr.isEmpty() || NomeMaeStr.isEmpty() || DataNascimentoStr.isEmpty() || CpfStr.isEmpty()
 					|| CidadeStr.isEmpty()) {
+				request.setAttribute("erro", "Campo obrigatório não preenchiso");
+				request.setAttribute("nextPage", "servletaluno?logica=AlunoEditar&operacao=buscar&matricula="+ MatriculaStr);
+				request.setAttribute("messageLink", "Tentar Novamente...");
+				return "erroPage.jsp";
 
-				return "aluno_cadastrar.jsp";
 
 			} else {
 
@@ -81,13 +89,24 @@ public class AlunoEditar implements LogicaAluno {
 
 					Connection connection = new ConnectionFactory().getConnection();
 					AlunoDao dao = new AlunoDao(connection);
-					dao.editar(aluno);
+					try{
+						dao.editar(aluno);
+					}catch(SQLException e){
+						request.setAttribute("erro", "Erro ao atualizar registro (AlunoDao - editar(): "+e.getMessage());
+						request.setAttribute("nextPage", "servletaluno?logica=AlunoEditar&operacao=buscar&matricula="+ MatriculaStr);
+						request.setAttribute("messageLink", "Tentar Novamente...");
+						return "erroPage.jsp";
+					}
 					connection.close();
 					
 					return "aluno_listar.jsp";
 
 				} catch (ParseException e) {
-					System.out.println("Erro de conversão de data!!");
+					request.setAttribute("erro", "Data em formato inválido: "+e.getMessage());
+					request.setAttribute("nextPage", "servletaluno?logica=AlunoEditar&operacao=buscar&matricula="+ MatriculaStr);
+					request.setAttribute("messageLink", "Tentar Novamente...");
+					return "erroPage.jsp";
+					
 				}
 			}
 			
