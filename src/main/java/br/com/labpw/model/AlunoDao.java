@@ -47,7 +47,7 @@ public class AlunoDao {
 
 	}
 
-	
+
 	public List<Aluno> pesquisarPorNome(String nome) {
 		try {
 			List<Aluno> alunos = new ArrayList<Aluno>();
@@ -191,6 +191,13 @@ public class AlunoDao {
 		return stmt.execute();
 		
 		
+	}
+
+	public boolean excluir(int matricula) throws SQLException {
+		String sql = "delete from aluno where MatrAluno=?";
+		PreparedStatement stmt = this.connection.prepareStatement(sql);
+		stmt.setInt(1, matricula);
+		return stmt.execute();
 	}
 
 }
