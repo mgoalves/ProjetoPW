@@ -1,3 +1,4 @@
+
 package br.com.labpw.model;
 
 import java.sql.Connection;
@@ -8,6 +9,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+
+import javax.swing.JOptionPane;
 
 public class AlunoDao {
 
@@ -169,8 +172,8 @@ public class AlunoDao {
 	}
 
 	public boolean editar(Aluno aluno) throws SQLException {
-		String sql = "update aluno set Nome=?, NomeMae=?, DataNascimento=? Rg=?, Cpf=?, Cidade=?, "
-					+ "Bairro=?, Logradouro=?, Cep=?, Numero=? where MatrAluno=?";
+		String sql = "update aluno set Nome=?, NomeMae=?, DataNascimento=?, Rg=?, Cpf=?, Cidade=?, "
+					+ "Bairro=?, Logradouro=?, Cep=?, Numero=? where MatrAluno=?";	
 		
 		PreparedStatement stmt = this.connection.prepareStatement(sql);
 		stmt.setString(1, aluno.getNome());
