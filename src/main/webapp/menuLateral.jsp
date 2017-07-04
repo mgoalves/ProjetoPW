@@ -29,7 +29,7 @@
 				<!-- HOME -->
 
 				<!-- ALUNOS -->
-				<li><a href="alunos.jsp"> <!-- Esse menu so parece para celular -->
+				<li><a href="servletaluno?logica=AlunoPesquisar"> <!-- Esse menu so parece para celular -->
 					<div class="figure_32 hidden-lg hidden-md hidden-sm">
 						<img src="img/icones_menu_32/aluno_32px.png"
 						alt="Menu Botão Alunos"> <span>alunos</span>
