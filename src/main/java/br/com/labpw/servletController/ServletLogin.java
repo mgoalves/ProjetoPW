@@ -44,11 +44,13 @@ public class ServletLogin extends HttpServlet {
 			if (usuarioAutenticado != null) {
 				HttpSession sessao = request.getSession();
 				sessao.setAttribute("usuario", usuarioAutenticado);
-				sessao.setMaxInactiveInterval(15 * 60);
+				sessao.setMaxInactiveInterval(10 * 60);
 				request.getRequestDispatcher("/home.jsp").forward(request, response);
 
 			} else {
-				request.setAttribute("menssagem", "Usuário e/ou senha inválidos!!!");
+				request.setAttribute("erro", "Usuário e/ou senha inválidos!!!");
+				request.setAttribute("nextPage", "index.html");
+				request.setAttribute("messageLink", "Tentar Novamente");
 				request.getRequestDispatcher("/erroPage.jsp").forward(request, response);
 				;
 			}

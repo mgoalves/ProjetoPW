@@ -22,7 +22,9 @@ public class FiltroAcessoJSP implements Filter{
 	}
 	
 	private void dispatcher(HttpServletRequest request, HttpServletResponse response, String mensagem) throws ServletException, IOException{
-		((HttpServletRequest) request).setAttribute("menssagem", mensagem);
+		((HttpServletRequest) request).setAttribute("erro", mensagem);
+		((HttpServletRequest) request).setAttribute("nextPage", "index.html");
+		((HttpServletRequest)request).setAttribute("messageLink", "Autenticar-se");
 		((HttpServletRequest) request).getRequestDispatcher("/erroPage.jsp").forward(request, response);
 	}
 	

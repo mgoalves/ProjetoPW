@@ -15,9 +15,13 @@
 
 		<div class="container-fluid">
 
+				
+				
 			<!--############# Linha Cabeçalho #############-->
 			<%@include file="includes/cabecalho.jsp"%>
 			<!-- ############# FIM do Cabeçalho #############-->
+		
+			
 
 			<!-- ############# Linha principal ############# -->
 			<div class="row margem-top-15px">
@@ -32,12 +36,12 @@
 				<div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
 
 					<!--############# TÍTULO PÁGINA #############-->
-					<%@include file="includes/aluno/aluno-titulo-pagina.jsp"%>
+					
 					<!--############# FIM TÍTULO PÁGINA #############-->
 
 
 					<!--############# FAIXA DE OPÇÕES #############-->
-					<%@include file="includes/aluno/aluno_faixa_opcoes.jsp"%>
+					<center><%@include file="includes/aluno/aluno_faixa_opcoes.jsp"%></center>
 					<!--############# FAIXA DE OPÇÕES #############-->
 
 					<!-- Div Conteudo -->

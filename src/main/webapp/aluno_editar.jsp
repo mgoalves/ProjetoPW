@@ -40,20 +40,20 @@
 							</div>
 							<div class="panel-body">
 
-								<form class="form-horizontal" id="cadastraAluno">
-
+								<form class="form-horizontal" method="post" id="cadastraAluno" action="servletaluno?logica=AlunoEditar&operacao=alterar">
+									
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="cadastrarMatricula">Matrícula</label>
 										<div class="col-lg-2 col-md-5 col-sm-9 col-xs-12">
-											<input type="text" class="form-control" id="cadastrarMatricula"
-											placeholder="Matrícula">
+											<input type="text" class="form-control" id="cadastrarMatricula" name="matricula" value="${aluno.matricula}"
+											placeholder="Matrícula" readonly="readonly">
 										</div>
 									</div>
 
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="cadastrarNome">Nome</label>
 										<div class="col-lg-4 col-md-7 col-sm-9 col-xs-12">
-											<input type="text" class="form-control" id="cadastrarNome"
+											<input type="text" class="form-control" id="cadastrarNome" name="nome" value="${aluno.nome}"
 											placeholder="Nome">
 										</div>
 									</div>
@@ -61,7 +61,7 @@
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="cadastrarNascimento">Nascimento</label>
 										<div class="col-lg-2 col-md-3 col-sm-5 col-xs-12">
-											<input class="form-control" id="cadastrarNascimento" type="date" value="aaaa-mm-dd"
+											<input class="form-control" id="cadastrarNascimento" name="dataNascimento" type="text" value="" placeholder="dd/mm/aaa"
 											id="example-date-input">
 										</div>
 									</div>
@@ -69,7 +69,7 @@
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="cadastrarMae">Mãe</label>
 										<div class="col-lg-2 col-md-7 col-sm-9 col-xs-12">
-											<input type="text" class="form-control" id="cadastrarMae"
+											<input type="text" class="form-control" id="cadastrarMae" name="nomeMae" value="${aluno.nomeMae}"
 											placeholder="Nome da mãe">
 										</div>
 									</div>
@@ -77,7 +77,7 @@
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="cadastrarRG">RG</label>
 										<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-											<input type="text" class="form-control" id="cadastrarRG"
+											<input type="text" class="form-control" id="cadastrarRG" name="rg" value="${aluno.rg}"
 											placeholder="00.000.000-0">
 										</div>
 									</div>
@@ -85,7 +85,7 @@
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="cadastrarCPF">CPF</label>
 										<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-											<input type="text" class="form-control" id="cadastrarCPF" 
+											<input type="text" class="form-control" id="cadastrarCPF" name="cpf" value="${aluno.cpf}"
 											placeholder="000.000.000-00" name="cpf" maxlength="14">
 										</div>
 									</div>
@@ -93,7 +93,7 @@
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="cadastrarCidade">Cidade</label>
 										<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-											<input type="text" class="form-control" id="cadastrarCidade"
+											<input type="text" class="form-control" id="cadastrarCidade" name="cidade" value="${aluno.endereco.cidade}"
 											placeholder="Cidade">
 										</div>
 									</div>
@@ -101,7 +101,7 @@
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="cadastrarCCEP">CEP</label>
 										<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-											<input type="text" class="form-control" id="cadastrarCCEP"
+											<input type="text" class="form-control" id="cadastrarCCEP" name="cep" value="${aluno.endereco.cep}"
 											placeholder="00.000-000" name="cep" maxlength="10">
 										</div>
 									</div>
@@ -109,7 +109,7 @@
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="cadastrarBairro">Bairro</label>
 										<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-											<input type="text" class="form-control" id="cadastrarBairro"
+											<input type="text" class="form-control" id="cadastrarBairro" name="bairro" value="${aluno.endereco.bairro}"
 											placeholder="Bairro">
 										</div>
 									</div>
@@ -117,7 +117,7 @@
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="cadastrarLogradouro">Logradouro</label>
 										<div class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
-											<input type="text" class="form-control" id="cadastrarLogradouro"
+											<input type="text" class="form-control" id="cadastrarLogradouro" name="logradouro" value="${aluno.endereco.logradouro}"
 											placeholder="Logradouro">
 										</div>
 									</div>
@@ -126,7 +126,7 @@
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label" for="cadastrarNumero">Número</label>
 										<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
-											<input type="number" class="form-control" id="cadastrarNumero"
+											<input type="number" class="form-control" id="cadastrarNumero" name="numero" value="${aluno.endereco.numero}"
 											placeholder="Número">
 										</div>
 									</div>
@@ -134,7 +134,9 @@
 									<div class="form-group">
 										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label"></label>
 										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-											<button class="col-lg-3 col-md-4 col-sm-6 col-xs-12 btn btn-primary" type="submit">Salvar</button>
+											<a href="servletaluno?logica=AlunoEditar&operacao=alterar">
+												<button class="col-lg-3 col-md-4 col-sm-6 col-xs-12 btn btn-primary" type="submit">Salvar</button>
+											</a>
 										</div>
 									</div>
 
