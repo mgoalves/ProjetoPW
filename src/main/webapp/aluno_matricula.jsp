@@ -24,22 +24,27 @@
 
 			<!-- ############# Linha principal ############# -->
 			<div class="row margem-top-15px">
-
+			
 				<!--############# Menu Lateral #############-->
 				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 menu-lateral">
 					<%@include file="menuLateral.jsp"%>
 				</div>
 				<!--############# Menu Lateral #############-->
+				
+				
 
 				<!-- ############# Conteudo ############# -->
 				<div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
+				<!--############# FAIXA DE OPÇÕES #############-->
+					<%@include file="includes/aluno/aluno_faixa_opcoes.jsp"%>
+				<!--############# FAIXA DE OPÇÕES #############-->
 
 
 
 					<!-- Div Conteudo -->
-					<!-- <div class="conteudo"> <hr />  -->
+					<div class="conteudo"> <hr /> 
 
-					<div class="panel panel-default" style="width: 90%; margin: auto;">
+					<div class="panel panel-default" style="width: 100%; margin: auto;">
 						<div class="panel-heading titulo-painel">
 							<!--############# TÍTULO PÁGINA #############-->
 

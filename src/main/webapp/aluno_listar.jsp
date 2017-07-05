@@ -35,7 +35,6 @@
 					
 					<!--############# FAIXA DE OPÇÕES #############-->
 						<%@include file="includes/aluno/aluno_faixa_opcoes.jsp"%>
-					
 					<!--############# FAIXA DE OPÇÕES #############-->
 
 					<!-- Div Conteudo -->
@@ -78,7 +77,7 @@
 												<td>${aluno.endereco.bairro}</td>
 	
 												<td class="editar-link"><a href="servletaluno?logica=AlunoEditar&operacao=buscar&matricula=${aluno.matricula}"><span class="glyphicon glyphicon-pencil"></span> Editar</a></td>
-												<td class="excluir-link"><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
+												<td class="excluir-link"><a href="servletaluno?logica=AlunoExcluir&matricula=${aluno.matricula}"> <!-- data-toggle="modal" data-target="#myModal" --><span  class="glyphicon glyphicon-remove"></span> Excluir</a></td>
 											</tr>
 										</c:forEach>
 									</table>
