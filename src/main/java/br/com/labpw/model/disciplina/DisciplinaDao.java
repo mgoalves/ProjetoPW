@@ -37,39 +37,8 @@ public class DisciplinaDao {
 		}
 	}
 
-	public List<Disciplina> buscarPorId(int codigo) {
-		try {
-			List<Disciplina> disciplinas = new ArrayList<Disciplina>();
+	public Disciplina buscarPorId(int codigo) {
 
-			//Comando de seleção ao banco de dados
-			String sql = "select * from disciplina where codigo like ? ";
-			PreparedStatement stmt = this.connection.prepareStatement(sql);
-			//Converter o codigo de Inteiro para String
-			stmt.setString(1, Integer.toString(codigo));
-			ResultSet rs = stmt.executeQuery();
-			
-			while (rs.next()) {
-				
-				Disciplina disciplina = new Disciplina();
-				
-				// Seta os valores retornados na pesquisa para os atributos de disciplina
-				disciplina.setCodigo(rs.getInt("codigo"));
-				disciplina.setNome(rs.getString("nome"));
-				disciplina.setDescricao(rs.getString("descricao"));
-				disciplina.setCargaHoraria(rs.getInt("cargaHoraria"));
-			
-				disciplinas.add(disciplina);
-				
-				
-			}
-			
-			return disciplinas;
-			
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
 		return null;
 
 	}
@@ -82,8 +51,35 @@ public class DisciplinaDao {
 
 	}
 
-	public ArrayList<Disciplina> listar() {
-		return null;
+	public List<Disciplina> listar() {
+		try {
+			List<Disciplina> disciplinas = new ArrayList<Disciplina>();
+
+			// Comando de seleção ao banco de dados
+			String sql = "select * from disciplina";
+			PreparedStatement stmt = this.connection.prepareStatement(sql);
+			ResultSet rs = stmt.executeQuery();
+
+			while (rs.next()) {
+
+				Disciplina disciplina = new Disciplina();
+
+				// Seta os valores retornados na pesquisa para os atributos de
+				// disciplina
+				disciplina.setCodigo(rs.getInt("codigo"));
+				disciplina.setNome(rs.getString("nome"));
+				disciplina.setDescricao(rs.getString("descricao"));
+				disciplina.setCargaHoraria(rs.getInt("cargaHoraria"));
+
+				disciplinas.add(disciplina);
+
+			}
+
+			return disciplinas;
+
+		} catch (SQLException e) {
+			throw new RuntimeException("Erro na listagem de disciplinas: " + e);
+		}
 	}
 
 }
