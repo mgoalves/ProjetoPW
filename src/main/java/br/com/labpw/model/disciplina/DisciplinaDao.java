@@ -28,6 +28,9 @@ public class DisciplinaDao {
 	}
 	
 	public Disciplina buscarPorId(int codigo){
+		
+		//List
+		
 		return null;
 	}
 	
