@@ -88,7 +88,7 @@ public class AlunoInserir implements LogicaAluno {
 			}
 
 		}
-		return "aluno_listar.jsp";
+		return "servletaluno?logica=AlunoPesquisar";
 	}
 
 }
