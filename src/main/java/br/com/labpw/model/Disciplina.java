@@ -3,10 +3,11 @@ package br.com.labpw.model;
 public class Disciplina {
 
 	// Atributos de um objeto do tipo Disciplina
-	private int codigo;
-	private String nome;
-	private String descricao;
-	private int cargaHoraria;
+	
+	private int codigo = 0;
+	private String nome = null;
+	private String descricao = null;
+	private int cargaHoraria = 0;
 
 	
 	
