@@ -39,9 +39,43 @@ public class DisciplinaDao {
 
 	public Disciplina buscarPorId(int codigo) {
 
-		return null;
+		Disciplina disciplina = null;
+
+		try {
+			
+			//Comando para buscar no banco 
+			String sql = "select * from disciplina where codigo=?";
+			PreparedStatement stmt = this.connection.prepareStatement(sql);
+			stmt.setString(1, Integer.toString(codigo));
+			ResultSet rs = stmt.executeQuery();
+			
+			if (rs.next()){
+				
+				disciplina = new Disciplina();
+				
+				//Seta os valores dentro do obejeto.
+				disciplina.setCodigo(rs.getInt("codigo"));
+				disciplina.setNome(rs.getString("nome"));
+				disciplina.setDescricao(rs.getString("descricao"));
+				disciplina.setCargaHoraria(rs.getInt("cargaHoraria"));
+			
+			}
+
+		} catch (SQLException e) {
+
+			throw new RuntimeException(e.getMessage());
+		}
+
+		return disciplina;
 
 	}
+	
+	
+	
+	
+	
+	
+	
 
 	public void alterar(int codigo) {
 
@@ -51,6 +85,7 @@ public class DisciplinaDao {
 
 	}
 
+	// Função que retorna todas tuplas de Disciplinas
 	public List<Disciplina> listar() {
 		try {
 			List<Disciplina> disciplinas = new ArrayList<Disciplina>();
