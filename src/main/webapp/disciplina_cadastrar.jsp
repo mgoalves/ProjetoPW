@@ -75,7 +75,7 @@
 									</div>
 
 									<div class="form-group">
-										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Duração</label>
+										<label class="col-lg-2 col-md-2 col-sm-3 col-xs-1 control-label">Carga Horária</label>
 										<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
 											<input type="text" class="form-control" id="cadastrarDuracao"
 											placeholder="Carga Horária">
