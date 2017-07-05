@@ -53,7 +53,7 @@ public class AlunoEditar implements LogicaAluno {
 
 			} else if (MatriculaStr.isEmpty() || NomeStr.isEmpty() || NomeMaeStr.isEmpty() || DataNascimentoStr.isEmpty() || CpfStr.isEmpty()
 					|| CidadeStr.isEmpty()) {
-				request.setAttribute("erro", "Campo obrigatório não preenchiso");
+				request.setAttribute("erro", "Campo obrigatório não preenchido");
 				request.setAttribute("nextPage", "servletaluno?logica=AlunoEditar&operacao=buscar&matricula="+ MatriculaStr);
 				request.setAttribute("messageLink", "Tentar Novamente...");
 				return "erroPage.jsp";

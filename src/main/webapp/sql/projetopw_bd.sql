@@ -1,7 +1,9 @@
 /* cria o banco de dados de nome "projetopw_db" */
-create database projetopw_bd;
+create database projetopw_bd
+default character set utf8
+default collate ut8_general_ci;
 
-# especifica ao servidor de banco de dados que queremos usar o banco de dados recém criado
+/* especifica ao servidor de banco de dados que queremos usar o banco de dados recém criado*/
 use projetopw_bd;
 
 /* comando para criar a tabela de usuários do sistema */
