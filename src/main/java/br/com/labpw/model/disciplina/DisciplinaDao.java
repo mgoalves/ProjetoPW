@@ -7,8 +7,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.management.RuntimeErrorException;
-
 import br.com.labpw.model.Disciplina;
 
 public class DisciplinaDao {
@@ -70,15 +68,13 @@ public class DisciplinaDao {
 
 	}
 	
-	
-	
-	
-	
-	
-	
+	public void alterar(int codigo) throws SQLException {
+		
 
-	public void alterar(int codigo) {
-
+		
+		
+		
+		
 	}
 
 	public void excluir(int codigo) {
