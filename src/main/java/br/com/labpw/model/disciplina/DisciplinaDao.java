@@ -18,7 +18,7 @@ public class DisciplinaDao {
 	}
 
 	public void incluir(Disciplina disciplina) throws SQLException {
-		String sql = "insert into disciplina (Codigo, Nome, Descricao, CargaHoraria) values (?, ?, ?, ?)";
+		String sql = "insert into disciplina (codigo, nome, descricao, cargaHoraria) values (?, ?, ?, ?)";
 
 		try {
 
