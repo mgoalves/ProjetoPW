@@ -14,18 +14,20 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import br.com.labpw.connection.ConnectionFactory;
-import br.com.labpw.model.Aluno;
-import br.com.labpw.model.AlunoDao;
 import br.com.labpw.model.Endereco;
-import br.com.labpw.model.LogicaAluno;
+import br.com.labpw.model.aluno.Aluno;
+import br.com.labpw.model.aluno.AlunoDao;
+import br.com.labpw.model.aluno.LogicaAluno;
 
 @WebServlet("/servletaluno")
 public class ServletAluno extends HttpServlet {
 
+	private static final long serialVersionUID = 1L;
+
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws IOException, ServletException {
 		
-		String classe ="br.com.labpw.model."+ request.getParameter("logica");
+		String classe ="br.com.labpw.model.aluno."+ request.getParameter("logica");
 			
 		try{
 			LogicaAluno logicaAluno = (LogicaAluno)Class.forName(classe).newInstance();

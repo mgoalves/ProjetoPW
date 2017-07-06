@@ -1,4 +1,4 @@
-package br.com.labpw.model;
+package br.com.labpw.model.aluno;
 
 import java.sql.Connection;
 import java.sql.SQLException;

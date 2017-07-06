@@ -1,6 +1,8 @@
-package br.com.labpw.model;
+package br.com.labpw.model.aluno;
 
 import java.util.Calendar;
+
+import br.com.labpw.model.Endereco;
 
 /**
  * @author Hitallo, Jones, Marcello e Reinaldo.

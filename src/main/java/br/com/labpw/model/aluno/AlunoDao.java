@@ -1,5 +1,5 @@
 
-package br.com.labpw.model;
+package br.com.labpw.model.aluno;
 
 import java.sql.Connection;
 import java.sql.Date;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-import javax.swing.JOptionPane;
+import br.com.labpw.model.Endereco;
 
 public class AlunoDao {
 

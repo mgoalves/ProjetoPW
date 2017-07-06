@@ -1,4 +1,4 @@
-package br.com.labpw.model;
+package br.com.labpw.model.aluno;
 
 import java.sql.Connection;
 import java.text.ParseException;
@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import br.com.labpw.connection.ConnectionFactory;
+import br.com.labpw.model.Endereco;
 
 public class AlunoInserir implements LogicaAluno {
 
