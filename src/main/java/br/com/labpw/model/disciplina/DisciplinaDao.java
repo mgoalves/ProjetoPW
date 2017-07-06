@@ -68,16 +68,27 @@ public class DisciplinaDao {
 
 	}
 	
+	//Função que permite a alteração dos valores de disciplina
+	//Exceto o codigo de disciplina, este não pode ser alterado
 	public void alterar(Disciplina disciplina) throws SQLException {
 		
-
-		
-		
-		
+		String sql = "update disciplina set nome=? decricao=? cargaHoraria=? where codigo=?";
+		PreparedStatement stmt = this.connection.prepareStatement(sql);
+		stmt.setString(1, disciplina.getNome());	
+		stmt.setString(2, disciplina.getDescricao());
+		stmt.setInt(3, disciplina.getCargaHoraria());
+		stmt.setInt(4, disciplina.getCodigo());
+		stmt.executeQuery();
 		
 	}
 
-	public void excluir(int codigo) {
+	//Função que exclui a tupla de acordo com o codigo fornecido
+	public void excluir(int codigo) throws SQLException {
+		
+		String sql = "delete from disciplina where codigo=?";
+		PreparedStatement stmt = this.connection.prepareStatement(sql);
+		stmt.setInt(1, codigo);
+		stmt.executeQuery();
 
 	}
 
