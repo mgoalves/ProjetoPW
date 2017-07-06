@@ -1,13 +1,16 @@
 package br.com.labpw.model;
 
+import java.util.Calendar;
+import java.util.Date;
+
 public class Professor {
 
 	// Atributos da classe professor
-	private String rg;
-	private String cpf;
-	private String nome;
-	private int matricula;
-	private String dataNascimento;
+	private String rg = null;
+	private String cpf = null;
+	private String nome = null;
+	private int matricula = 0;
+	private Calendar dataNascimento = null;
 
 	// Atributos importados
 	private Endereco end;
@@ -39,12 +42,6 @@ public class Professor {
 	public void setMatricula(int matricula) {
 		this.matricula = matricula;
 	}
-	public String getDataNascimento() {
-		return dataNascimento;
-	}
-	public void setDataNascimento(String dataNascimento) {
-		this.dataNascimento = dataNascimento;
-	}
 	public Endereco getEnd() {
 		return end;
 	}
@@ -57,5 +54,13 @@ public class Professor {
 	public void setForm(Formacao form) {
 		this.form = form;
 	}
+	public Calendar getDataNascimento() {
+		return dataNascimento;
+	}
+	public void setDataNascimento(Calendar dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
+	
+
 
 }
