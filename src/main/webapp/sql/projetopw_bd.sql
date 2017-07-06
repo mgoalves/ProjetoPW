@@ -1,12 +1,12 @@
 /* cria o banco de dados de nome "projetopw_db" */
-create database projetopw_bd;
-default character set utf8;
+create database projetopw_bd
+default character set utf8
 default collate ut8_general_ci;
 
-/* especifica ao servidor de banco de dados que queremos usar o banco de dados recÈm criado*/
+/* especifica ao servidor de banco de dados que queremos usar o banco de dados rec√©m criado*/
 use projetopw_bd;
 
-/* comando para criar a tabela de usu·rios do sistema */
+/* comando para criar a tabela de usu√°rios do sistema */
 create table usuarios(
     usuario varchar(20),
     senha varchar(15),
@@ -60,16 +60,43 @@ create table matricula(
 
 select * from aluno;
 
-# Inserindo usu·rios do sistema 
+# Inserindo usu√°rios do sistema 
 insert into usuarios (usuario, senha) values ('hitalo', '123');
 insert into usuarios (usuario, senha) values ('jones', '123');
-insert into usuarios (usuario, senha) values ('marcelo', '123');
+insert into usuarios (usuario, senha) values ('marcello', '123');
 insert into usuarios (usuario, senha) values ('reinaldo', '123');
-insert into usuarios (usuario, senha) values ('walison', '123');
+insert into usuarios (usuario, senha) values ('wallison', '123');
+
+
+create table professor (
+
+	/*Atributos Primarios*/
+	rg varchar(8) not null,
+	cpf varchar(13) not null,
+	nome varchar (30) not null,
+	matricula int auto_increment,
+	dataNascimento date,
+	
+	
+	/*Atrubutos Secunadrios para Endere√ßo*/
+	cidade varchar(20),
+	bairro  varchar(20),
+	logradouro varchar(20),
+	cep varchar(8),
+	numero int,
+	
+	/*Atributos Secund√°rios para Forma√ß√£o*/
+	mestrado varchar(30),
+	graduacao varchar(30),
+	posGraduacao varchar(30),
+	
+	constraint primary key(matricula)
+	
+) ENGINE = innodb;
 
 
 
-/* Exemplo de criaÁ„o de tabela com chave prim·ria
+/* Exemplo de cria√ß√£o de tabela com chave prim√°ria
 
 CREATE TABLE teste ( 
 codigo int(7) NOT NULL default '0',  
