@@ -68,7 +68,7 @@ public class DisciplinaDao {
 
 	}
 	
-	public void alterar(int codigo) throws SQLException {
+	public void alterar(Disciplina disciplina) throws SQLException {
 		
 
 		
