@@ -38,7 +38,7 @@ public class AlunoDao {
 			stmt.setString(7, aluno.getEndereco().getBairro());
 			stmt.setString(8, aluno.getEndereco().getLogradouro());
 			stmt.setString(9, aluno.getEndereco().getCep());
-			stmt.setString(10, aluno.getEndereco().getNumero());
+			stmt.setInt(10, aluno.getEndereco().getNumero());
 
 			stmt.execute();
 		} catch (SQLException e) {
@@ -72,7 +72,7 @@ public class AlunoDao {
 				aluno.getEndereco().setBairro(rs.getString("Bairro"));
 				aluno.getEndereco().setLogradouro(rs.getString("Logradouro"));
 				aluno.getEndereco().setCep(rs.getString("Cep"));
-				aluno.getEndereco().setNumero(rs.getString("Numero"));
+				aluno.getEndereco().setNumero(rs.getInt("Numero"));
 
 				// Convete a data retornada do banco para o tipo Calendar
 				Calendar dataNascimento = Calendar.getInstance();
@@ -115,7 +115,7 @@ public class AlunoDao {
 				aluno.getEndereco().setBairro(rs.getString("Bairro"));
 				aluno.getEndereco().setLogradouro(rs.getString("Logradouro"));
 				aluno.getEndereco().setCep(rs.getString("Cep"));
-				aluno.getEndereco().setNumero(rs.getString("Numero"));
+				aluno.getEndereco().setNumero(rs.getInt("Numero"));
 
 				// Convete a data retornada do banco para o tipo Calendar
 				Calendar dataNascimento = Calendar.getInstance();
@@ -153,7 +153,7 @@ public class AlunoDao {
 				aluno.getEndereco().setBairro(rs.getString("Bairro"));
 				aluno.getEndereco().setLogradouro(rs.getString("Logradouro"));
 				aluno.getEndereco().setCep(rs.getString("Cep"));
-				aluno.getEndereco().setNumero(rs.getString("Numero"));
+				aluno.getEndereco().setNumero(rs.getInt("Numero"));
 				
 				//Convertendo data para Calendar e setando como atributo de aluno
 				Calendar dataNascimento = Calendar.getInstance();
@@ -185,7 +185,7 @@ public class AlunoDao {
 		stmt.setString(7, aluno.getEndereco().getBairro());
 		stmt.setString(8, aluno.getEndereco().getLogradouro());
 		stmt.setString(9, aluno.getEndereco().getCep());
-		stmt.setString(10, aluno.getEndereco().getNumero());
+		stmt.setInt(10, aluno.getEndereco().getNumero());
 		stmt.setInt(11, aluno.getMatricula());
 		
 		return stmt.execute();

@@ -63,7 +63,7 @@ public class AlunoInserir implements LogicaAluno {
 				endereco.setBairro(BairroStr);
 				endereco.setLogradouro(LogradouroStr);
 				endereco.setCep(CepStr);
-				endereco.setNumero(NumeroStr);
+				endereco.setNumero(Integer.parseInt(NumeroStr));
 
 				// Instancia um aluno e seta seus atributos
 				Aluno aluno = new Aluno();
