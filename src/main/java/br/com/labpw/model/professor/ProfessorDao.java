@@ -53,7 +53,51 @@ public class ProfessorDao {
 	}
 
 	public List<Professor> pesquisarPorNome(String nome) {
-		return null;
+		try {
+			List<Professor> professores = new ArrayList<Professor>();
+
+			String sql = "select * from professor where nome like ? '%'";
+			PreparedStatement stmt = this.connection.prepareStatement(sql);
+			stmt.setString(1, nome);
+			ResultSet rs = stmt.executeQuery();
+			
+			while (rs.next()) {
+				
+				Professor professor = new Professor();
+				
+				//Dados do professor
+				professor.setRg(rs.getString("rg"));
+				professor.setCpf(rs.getString("cpf"));
+				professor.setNome(rs.getString("nome"));
+				professor.setMatricula(rs.getInt("matricula"));
+				
+				//Dados do endereço
+				professor.getEnd().setCidade(rs.getString("cidade"));
+				professor.getEnd().setBairro(rs.getString("bairro"));
+				professor.getEnd().setLogradouro(rs.getString("logradouro"));
+				professor.getEnd().setCep(rs.getString("cep"));
+				professor.getEnd().setNumero(rs.getInt("numero"));
+				
+				//Dados da graduação
+				professor.getForm().setMestrado(rs.getString("mestrado"));
+				professor.getForm().setGraduacao(rs.getString("mestrado"));
+				professor.getForm().setPosGraduacao("posGraduacao");
+				
+				
+				//Data de nascimento
+				Calendar dataNascimento = Calendar.getInstance();
+				dataNascimento.setTime(rs.getDate("dataNascimento"));
+				professor.setDataNascimento(dataNascimento);
+				
+				professores.add(professor);
+				
+			}
+			
+			return professores;
+			
+		} catch (SQLException e) {
+			throw new RuntimeException(e.getMessage());
+		}
 
 	}
 
