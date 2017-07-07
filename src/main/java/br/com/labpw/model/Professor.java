@@ -45,9 +45,6 @@ public class Professor {
 	public Endereco getEnd() {
 		return end;
 	}
-	public void setEnd(Endereco end) {
-		this.end = end;
-	}
 	public Formacao getForm() {
 		return form;
 	}
